@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container-xl">
+    <div class="page-header d-print-none mb-3">
+        <div class="row align-items-center">
+            <div class="col">
+                <h2 class="page-title">
+                    {% if form.instance.pk %}编辑SKU{% else %}新增SKU{% endif %}
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        {% if form.non_field_errors %}
+            <div class="alert alert-danger mb-3">
+                {% for error in form.non_field_errors %}
+                    {{ error }}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <div class="row row-cards">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label class="form-label required">{{ form.sku_code.label }}</label>
+                                {{ form.sku_code }}
+                                {% if form.sku_code.errors %}
+                                    <div class="invalid-feedback d-block">{{ form.sku_code.errors.0 }}</div>
+                                {% endif %}
+                                {% if form.sku_code.help_text %}
+                                    <div class="form-text text-muted">{{ form.sku_code.help_text }}</div>
+                                {% endif %}
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label required">{{ form.sku_name.label }}</label>
+                                {{ form.sku_name }}
+                                {% if form.sku_name.errors %}
+                                    <div class="invalid-feedback d-block">{{ form.sku_name.errors.0 }}</div>
+                                {% endif %}
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label">{{ form.provider_name.label }}</label>
+                                {{ form.provider_name }}
+                                {% if form.provider_name.errors %}
+                                    <div class="invalid-feedback d-block">{{ form.provider_name.errors.0 }}</div>
+                                {% endif %}
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label">{{ form.plating_process.label }}</label>
+                                {{ form.plating_process }}
+                                {% if form.plating_process.errors %}
+                                    <div class="invalid-feedback d-block">{{ form.plating_process.errors.0 }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label class="form-label">{{ form.color.label }}</label>
+                                {{ form.color }}
+                                {% if form.color.errors %}
+                                    <div class="invalid-feedback d-block">{{ form.color.errors.0 }}</div>
+                                {% endif %}
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label required">{{ form.weight.label }}</label>
+                                {{ form.weight }}
+                                {% if form.weight.errors %}
+                                    <div class="invalid-feedback d-block">{{ form.weight.errors.0 }}</div>
+                                {% endif %}
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="form-label required">{{ form.length.label }}</label>
+                                {{ form.length }}
+                                {% if form.length.errors %}
+                                    <div class="invalid-feedback d-block">{{ form.length.errors.0 }}</div>
+                                {% endif %}
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="form-label required">{{ form.width.label }}</label>
+                                {{ form.width }}
+                                {% if form.width.errors %}
+                                    <div class="invalid-feedback d-block">{{ form.width.errors.0 }}</div>
+                                {% endif %}
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="form-label required">{{ form.height.label }}</label>
+                                {{ form.height }}
+                                {% if form.height.errors %}
+                                    <div class="invalid-feedback d-block">{{ form.height.errors.0 }}</div>
+                                {% endif %}
+                            </div>
+                            <div class="col-sm-12">
+                                <label class="form-check form-switch mt-4">
+                                    {{ form.status }}
+                                    <span class="form-check-label">{{ form.status.label }}</span>
+                                </label>
+                                {% if form.status.errors %}
+                                    <div class="invalid-feedback d-block">{{ form.status.errors.0 }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-3 d-flex justify-content-end">
+            <a href="{% url 'gallery:sku_list' %}" class="btn btn-link me-2">取消</a>
+            <button type="submit" class="btn btn-primary">保存</button>
+        </div>
+    </form>
+</div>
+{% endblock %} 

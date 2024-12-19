@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>库存列表</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>SKU</th>
+            <th>仓库</th>
+            <th>库存数量</th>
+            <th>平均成本</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for stock in stocks %}
+        <tr>
+            <td>{{ stock.sku.name }}</td>
+            <td>{{ stock.warehouse }}</td>
+            <td>{{ stock.stock_num }}</td>
+            <td>{{ stock.avg_cost }}</td>
+            <td>
+                <a href="{% url 'storage:stock-detail' stock.pk %}" class="btn btn-info btn-sm">详情</a>
+                <a href="{% url 'storage:stock-update' stock.pk %}" class="btn btn-warning btn-sm">编辑</a>
+                <a href="{% url 'storage:stock-delete' stock.pk %}" class="btn btn-danger btn-sm">删除</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %} 

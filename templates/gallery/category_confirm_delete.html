@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container-xl">
+    <div class="page-header d-print-none">
+        <div class="row align-items-center">
+            <div class="col">
+                <h2 class="page-title">删除类目</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <form method="post">
+                {% csrf_token %}
+                <p>确定要删除类目 "{{ object.category_name_zh }}" 吗？</p>
+                <p class="text-danger">注意：此操作不可恢复！</p>
+                
+                <div class="btn-list justify-content-end">
+                    <a href="{% url 'gallery:category_list' %}" class="btn btn-link">取消</a>
+                    <button type="submit" class="btn btn-danger">确认删除</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %} 
