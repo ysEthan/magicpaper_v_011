@@ -250,7 +250,6 @@
                         <th style="width: 140px">SKU属性</th>
                         <th style="width: 140px">规格尺寸</th>
                         <th style="width: 100px">供应商</th>
-                        <th style="width: 70px">状态</th>
                         <th style="width: 110px">创建时间</th>
                         <th style="width: 120px"></th>
                     </tr>
@@ -297,13 +296,6 @@
                             </div>
                         </td>
                         <td>{{ sku.provider_code }}</td>
-                        <td>
-                            {% if sku.status %}
-                            <span class="badge bg-success">启用</span>
-                            {% else %}
-                            <span class="badge bg-danger">禁用</span>
-                            {% endif %}
-                        </td>
                         <td>{{ sku.created_at|date:"Y-m-d H:i" }}</td>
                         <td>
                             <div class="btn-list flex-nowrap">
@@ -318,7 +310,7 @@
                     </tr>
                     {% empty %}
                     <tr>
-                        <td colspan="9" class="text-center">暂无数据</td>
+                        <td colspan="8" class="text-center">暂无数据</td>
                     </tr>
                     {% endfor %}
                 </tbody>
