@@ -1,31 +1,122 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
 {% block content %}
-<h1>库存列表</h1>
-<table class="table">
-    <thead>
-        <tr>
-            <th>SKU</th>
-            <th>仓库</th>
-            <th>库存数量</th>
-            <th>平均成本</th>
-            <th>操作</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for stock in stocks %}
-        <tr>
-            <td>{{ stock.sku.name }}</td>
-            <td>{{ stock.warehouse }}</td>
-            <td>{{ stock.stock_num }}</td>
-            <td>{{ stock.avg_cost }}</td>
-            <td>
-                <a href="{% url 'storage:stock-detail' stock.pk %}" class="btn btn-info btn-sm">详情</a>
-                <a href="{% url 'storage:stock-update' stock.pk %}" class="btn btn-warning btn-sm">编辑</a>
-                <a href="{% url 'storage:stock-delete' stock.pk %}" class="btn btn-danger btn-sm">删除</a>
-            </td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+<div class="container-xl">
+    <!-- Page title -->
+    <div class="page-header d-print-none">
+        <div class="row align-items-center">
+            <div class="col">
+                <h2 class="page-title">库存管理</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search form -->
+    <div class="card mb-3">
+        <div class="card-body">
+            <form method="get" class="row g-3">
+                <div class="col-md-3">
+                    <select class="form-select" name="warehouse" onchange="this.form.submit()">
+                        <option value="">-- 按仓库筛选 --</option>
+                        {% for warehouse in warehouses %}
+                            <option value="{{ warehouse.id }}" {% if selected_warehouse == warehouse.id|stringformat:"i" %}selected{% endif %}>
+                                {{ warehouse.name }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="search" value="{{ search_query }}" placeholder="搜索SKU...">
+                        <button class="btn btn-primary" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                <path d="M21 21l-6 -6" />
+                            </svg>
+                            搜索
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="table-responsive">
+            <table class="table table-vcenter card-table">
+                <thead>
+                    <tr>
+                        <th>SKU信息</th>
+                        <th>所属仓库</th>
+                        <th>库存数量</th>
+                        <th>平均成本</th>
+                        <th>更新时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for stock in stocks %}
+                    <tr>
+                        <td>
+                            <div class="d-flex flex-column gap-1">
+                                <div>{{ stock.sku.sku_code }}</div>
+                                <div class="text-muted">{{ stock.sku.sku_name }}</div>
+                            </div>
+                        </td>
+                        <td>{{ stock.warehouse.name }}</td>
+                        <td>{{ stock.stock_num }}</td>
+                        <td>{{ stock.avg_cost }}</td>
+                        <td>{{ stock.updated_at|date:"Y-m-d H:i" }}</td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="5" class="text-center">暂无数据</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
+        {% if is_paginated %}
+        <div class="card-footer d-flex align-items-center">
+            <p class="m-0 text-muted">
+                显示 {{ page_obj.start_index }} 到 {{ page_obj.end_index }} 条，共 {{ paginator.count }} 条
+            </p>
+            <ul class="pagination m-0 ms-auto">
+                {% if page_obj.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="?page=1{% if search_query %}&search={{ search_query }}{% endif %}{% if selected_warehouse %}&warehouse={{ selected_warehouse }}{% endif %}">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M11 7l-5 5l5 5" />
+                            <path d="M17 7l-5 5l5 5" />
+                        </svg>
+                    </a>
+                </li>
+                {% endif %}
+                
+                {% for num in paginator.page_range %}
+                    {% if page_obj.number == num %}
+                    <li class="page-item active"><a class="page-link" href="#">{{ num }}</a></li>
+                    {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                    <li class="page-item"><a class="page-link" href="?page={{ num }}{% if search_query %}&search={{ search_query }}{% endif %}{% if selected_warehouse %}&warehouse={{ selected_warehouse }}{% endif %}">{{ num }}</a></li>
+                    {% endif %}
+                {% endfor %}
+
+                {% if page_obj.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ paginator.num_pages }}{% if search_query %}&search={{ search_query }}{% endif %}{% if selected_warehouse %}&warehouse={{ selected_warehouse }}{% endif %}">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M13 7l5 5l-5 5" />
+                            <path d="M7 7l5 5l-5 5" />
+                        </svg>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</div>
 {% endblock %} 
