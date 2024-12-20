@@ -8,6 +8,21 @@
             <div class="col">
                 <h2 class="page-title">库存管理</h2>
             </div>
+            <div class="col-auto ms-auto d-print-none">
+                <div class="btn-list">
+                    <form action="{% url 'storage:stock_sync' %}" method="post" style="display: inline;">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-refresh" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4"></path>
+                                <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4"></path>
+                            </svg>
+                            同步库存
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -119,4 +134,15 @@
         {% endif %}
     </div>
 </div>
+
+<!-- 添加加载动画的 JavaScript -->
+{% block extra_js %}
+<script>
+document.querySelector('form[action*="sync"]').addEventListener('submit', function(e) {
+    var btn = this.querySelector('button[type="submit"]');
+    btn.classList.add('btn-loading');
+    btn.disabled = true;
+});
+</script>
+{% endblock %}
 {% endblock %} 
