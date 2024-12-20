@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'page',
     'muggle',
     'gallery',
+    'storage'
     # 'storage.apps.StorageConfig',
 ]
 
