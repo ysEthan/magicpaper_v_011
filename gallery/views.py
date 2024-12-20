@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
-from .models import Category, SPU
+from .models import Category, SPU, SKU
 from django.contrib import messages
 
 # Create your views here.
@@ -157,4 +157,82 @@ class SPUDeleteView(LoginRequiredMixin, DeleteView):
 
     def delete(self, request, *args, **kwargs):
         messages.success(request, 'SPU删除成功！')
+        return super().delete(request, *args, **kwargs)
+
+class SKUListView(LoginRequiredMixin, ListView):
+    model = SKU
+    template_name = 'gallery/sku_list.html'
+    context_object_name = 'skus'
+    paginate_by = 10
+    login_url = '/muggle/login/'
+    
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        search_query = self.request.GET.get('search')
+        if search_query:
+            queryset = queryset.filter(
+                sku_name__icontains=search_query
+            ) | queryset.filter(
+                sku_code__icontains=search_query
+            )
+        return queryset.select_related('spu')  # 优化查询，减少数据库访问
+        
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['search_query'] = self.request.GET.get('search', '')
+        context['active_menu'] = 'sku'  # 用于高亮左侧菜单
+        return context
+
+class SKUCreateView(LoginRequiredMixin, CreateView):
+    model = SKU
+    template_name = 'gallery/sku_form.html'
+    fields = ['sku_code', 'sku_name', 'provider_code', 'plating_process', 
+             'color', 'material', 'length', 'width', 'height', 'weight', 
+             'status', 'spu', 'img_url']
+    success_url = reverse_lazy('gallery:sku_list')
+    login_url = '/muggle/login/'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = '新增SKU'
+        context['active_menu'] = 'sku'
+        return context
+
+    def form_valid(self, form):
+        messages.success(self.request, 'SKU创建成功！')
+        return super().form_valid(form)
+
+class SKUUpdateView(LoginRequiredMixin, UpdateView):
+    model = SKU
+    template_name = 'gallery/sku_form.html'
+    fields = ['sku_code', 'sku_name', 'provider_code', 'plating_process', 
+             'color', 'material', 'length', 'width', 'height', 'weight', 
+             'status', 'spu', 'img_url']
+    success_url = reverse_lazy('gallery:sku_list')
+    login_url = '/muggle/login/'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = '编辑SKU'
+        context['active_menu'] = 'sku'
+        return context
+
+    def form_valid(self, form):
+        messages.success(self.request, 'SKU更新成功！')
+        return super().form_valid(form)
+
+class SKUDeleteView(LoginRequiredMixin, DeleteView):
+    model = SKU
+    success_url = reverse_lazy('gallery:sku_list')
+    login_url = '/muggle/login/'
+    template_name = 'gallery/sku_confirm_delete.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = '删除SKU'
+        context['active_menu'] = 'sku'
+        return context
+
+    def delete(self, request, *args, **kwargs):
+        messages.success(request, 'SKU删除成功！')
         return super().delete(request, *args, **kwargs)
