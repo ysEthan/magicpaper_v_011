@@ -54,9 +54,9 @@
                         <th>SPU编码</th>
                         <th>SPU名称</th>
                         <th>所属类目</th>
+                        <th>产品类型</th>
                         <th>销售渠道</th>
                         <th>状态</th>
-                        <th>创建时间</th>
                         <th class="w-1"></th>
                     </tr>
                 </thead>
@@ -65,8 +65,9 @@
                     <tr>
                         <td>{{ spu.spu_code }}</td>
                         <td>{{ spu.spu_name }}</td>
-                        <td>{{ spu.category.full_name }}</td>
-                        <td>{{ spu.get_sales_channel_display }}</td>
+                        <td>{{ spu.category_full_name }}</td>
+                        <td>{{ spu.get_product_type_display }}</td>
+                        <td>{{ spu.channel_display }}</td>
                         <td>
                             {% if spu.status %}
                             <span class="badge bg-success">启用</span>
@@ -74,14 +75,10 @@
                             <span class="badge bg-danger">禁用</span>
                             {% endif %}
                         </td>
-                        <td>{{ spu.created_at|date:"Y-m-d H:i" }}</td>
                         <td>
                             <div class="btn-list flex-nowrap">
                                 <a href="{% url 'gallery:spu_edit' spu.id %}" class="btn btn-white btn-sm">
                                     编辑
-                                </a>
-                                <a href="{% url 'gallery:sku_add' %}?spu={{ spu.id }}" class="btn btn-primary btn-sm">
-                                    新增SKU
                                 </a>
                                 <a href="{% url 'gallery:spu_delete' spu.id %}" class="btn btn-danger btn-sm">
                                     删除
@@ -146,8 +143,8 @@
                     <a class="page-link" href="?page={{ paginator.num_pages }}{% if search_query %}&search={{ search_query }}{% endif %}">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M7 7l5 5l-5 5" />
                             <path d="M13 7l5 5l-5 5" />
+                            <path d="M7 7l5 5l-5 5" />
                         </svg>
                     </a>
                 </li>
