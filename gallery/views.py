@@ -5,7 +5,7 @@ from django.urls import reverse_lazy
 from .models import Category, SPU, SKU
 from django.contrib import messages
 from .sync import ProductSync
-from django.db.models import Q
+from django.db.models import Q, Count
 
 # Create your views here.
 
@@ -177,6 +177,7 @@ class SKUListView(LoginRequiredMixin, ListView):
         color = self.request.GET.get('color')
         material = self.request.GET.get('material')
         plating = self.request.GET.get('plating')
+        product_type = self.request.GET.get('product_type')  # 添加产品类型筛选
         
         # 应用筛选条件
         if search_query:
@@ -187,7 +188,7 @@ class SKUListView(LoginRequiredMixin, ListView):
                 Q(spu__spu_name__icontains=search_query)
             )
         
-        if category_id and category_id.isdigit():  # 确保 category_id 是有效的数字
+        if category_id and category_id.isdigit():
             queryset = queryset.filter(spu__category_id=int(category_id))
             
         if color:
@@ -198,6 +199,9 @@ class SKUListView(LoginRequiredMixin, ListView):
             
         if plating:
             queryset = queryset.filter(plating_process=plating)
+            
+        if product_type:  # 添加产品类型筛选条件
+            queryset = queryset.filter(spu__product_type=product_type)
         
         return queryset.select_related('spu', 'spu__category')
         
@@ -207,22 +211,55 @@ class SKUListView(LoginRequiredMixin, ListView):
         context['search_query'] = self.request.GET.get('search', '')
         context['active_menu'] = 'sku'
         
-        # 获取所有类目供筛选
-        context['categories'] = Category.objects.filter(is_last_level=True)
+        # 获取有 SKU 关联的类目
+        context['categories'] = Category.objects.filter(
+            spus__skus__isnull=False
+        ).annotate(
+            sku_count=Count('spus__skus')  # 统计每个类目下的 SKU 数量
+        ).order_by('category_name_en').distinct()
         
         # 安全地获取 category_id
         category_id = self.request.GET.get('category', '')
         context['category_id'] = int(category_id) if category_id.isdigit() else 0
         
-        # 获取所有可选的颜色、材质和电镀工艺
-        context['colors'] = SKU.objects.exclude(color='').values_list('color', flat=True).distinct()
-        context['materials'] = SKU.objects.exclude(material='').values_list('material', flat=True).distinct()
-        context['platings'] = SKU.objects.exclude(plating_process='').values_list('plating_process', flat=True).distinct()
+        # 获取所有可选的颜色、材质和电镀工艺，并按值排序
+        context['colors'] = SKU.objects.exclude(
+            Q(color__isnull=True) | Q(color='')
+        ).values('color').annotate(
+            count=Count('id')
+        ).order_by('color').values_list('color', flat=True)
+        
+        context['materials'] = SKU.objects.exclude(
+            Q(material__isnull=True) | Q(material='')
+        ).values('material').annotate(
+            count=Count('id')
+        ).order_by('material').values_list('material', flat=True)
+        
+        context['platings'] = SKU.objects.exclude(
+            Q(plating_process__isnull=True) | Q(plating_process='')
+        ).values('plating_process').annotate(
+            count=Count('id')
+        ).order_by('plating_process').values_list('plating_process', flat=True)
         
         # 当前选中的筛选值
         context['selected_color'] = self.request.GET.get('color', '')
         context['selected_material'] = self.request.GET.get('material', '')
         context['selected_plating'] = self.request.GET.get('plating', '')
+        
+        # 获取所有产品类型选项，包含显示名称
+        product_types = []
+        for pt in SPU.PRODUCT_TYPE_CHOICES:
+            count = SPU.objects.filter(product_type=pt[0]).count()
+            if count > 0:  # 只显示有数据的类型
+                product_types.append({
+                    'value': pt[0],
+                    'label': pt[1],
+                    'count': count
+                })
+        context['product_types'] = product_types
+        
+        # 当前选中的产品类型
+        context['selected_product_type'] = self.request.GET.get('product_type', '')
         
         return context
 
