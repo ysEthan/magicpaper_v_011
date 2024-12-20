@@ -81,8 +81,8 @@ class ProductSync:
             # 如果还有下一页，递归处理
             if current_page < max_page :
                 time.sleep(1)  # 避免请求过快
-                next_count = self.sync_products(start_time, end_time, page + 1)
-                synced_count += next_count
+                # next_count = self.sync_products(start_time, end_time, page + 1)
+                # synced_count += next_count
 
             return synced_count
 
@@ -152,7 +152,6 @@ class ProductSync:
             raise Exception("系统中没有可用的最后一级类目，请先创建类目")
         
         for product in products:
-            print(product)
             try:
                 print(f"开始处理产品: {product['specNo']}")
                 
@@ -165,7 +164,6 @@ class ProductSync:
                         # 尝试通过英文名称匹配类目
                         category = Category.objects.filter(
                             category_name_en__iexact=class_name_en,  # 不区分大小写匹配
-                            # is_last_level=True
                         ).first() or default_category
                         
                         if category == default_category:
@@ -196,10 +194,10 @@ class ProductSync:
                 # 处理SKU
                 sku_defaults = {
                     'sku_name': product['specName'],
-                    'provider_name': product['providerNameList'][0] if product['providerNameList'] else '无',
-                    'plating_process': product['prop4'],  #
-                    'color': product['prop2'],  #
-                    'material': product['prop8'],  # 默认无材质
+                    'provider_code': product['providerList'][0]['providerNo'] if product['providerList'] else 'unknown',  # 使用供应商编码
+                    'plating_process': product['prop4'] or 'none',  # 电镀工艺，如果为空则为'none'
+                    'color': product['prop2'] or '无',  # 颜色
+                    'material': product['prop8'] or '无',  # 材质
                     'length': float(product['length']) if product['length'] else 0,
                     'width': float(product['width']) if product['width'] else 0,
                     'height': float(product['height']) if product['height'] else 0,
@@ -209,7 +207,7 @@ class ProductSync:
                 }
 
                 # 处理图片
-                if product.get('imgUrl'):  # 使用 get 方法安全获取 imgUrl
+                if product.get('imgUrl'):
                     image_url = product['imgUrl']
                     print(f"发现图片URL: {image_url}")
                     # 移除时间戳参数

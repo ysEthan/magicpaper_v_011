@@ -1,9 +1,10 @@
-from django.shortcuts import render
-from django.views.generic import ListView, CreateView, UpdateView, DeleteView
+from django.shortcuts import render, redirect
+from django.views.generic import ListView, CreateView, UpdateView, DeleteView, View
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from .models import Category, SPU, SKU
 from django.contrib import messages
+from .sync import ProductSync
 
 # Create your views here.
 
@@ -236,3 +237,14 @@ class SKUDeleteView(LoginRequiredMixin, DeleteView):
     def delete(self, request, *args, **kwargs):
         messages.success(request, 'SKU删除成功！')
         return super().delete(request, *args, **kwargs)
+
+class SKUSyncView(LoginRequiredMixin, View):
+    def post(self, request):
+        try:
+            sync = ProductSync()
+            count = sync.sync_products()
+            sync.clean_old_images()  # 清理旧图片
+            messages.success(request, f'成功同步 {count} 条数据！')
+        except Exception as e:
+            messages.error(request, f'同步失败：{str(e)}')
+        return redirect('gallery:sku_list')

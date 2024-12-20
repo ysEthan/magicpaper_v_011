@@ -2,7 +2,7 @@ from django.urls import path
 from .views import (
     CategoryListView, CategoryCreateView, CategoryUpdateView, CategoryDeleteView,
     SPUListView, SPUCreateView, SPUUpdateView, SPUDeleteView,
-    SKUListView, SKUCreateView, SKUUpdateView, SKUDeleteView
+    SKUListView, SKUCreateView, SKUUpdateView, SKUDeleteView, SKUSyncView
 )
 
 app_name = 'gallery'
@@ -20,4 +20,5 @@ urlpatterns = [
     path('skus/add/', SKUCreateView.as_view(), name='sku_add'),
     path('skus/<int:pk>/edit/', SKUUpdateView.as_view(), name='sku_edit'),
     path('skus/<int:pk>/delete/', SKUDeleteView.as_view(), name='sku_delete'),
+    path('skus/sync/', SKUSyncView.as_view(), name='sku_sync'),
 ] 
