@@ -5,6 +5,7 @@ from django.urls import reverse_lazy
 from .models import Category, SPU, SKU
 from django.contrib import messages
 from .sync import ProductSync
+from django.db.models import Q
 
 # Create your views here.
 
@@ -169,19 +170,60 @@ class SKUListView(LoginRequiredMixin, ListView):
     
     def get_queryset(self):
         queryset = super().get_queryset()
+        
+        # 获取筛选参数
         search_query = self.request.GET.get('search')
+        category_id = self.request.GET.get('category')
+        color = self.request.GET.get('color')
+        material = self.request.GET.get('material')
+        plating = self.request.GET.get('plating')
+        
+        # 应用筛选条件
         if search_query:
             queryset = queryset.filter(
-                sku_name__icontains=search_query
-            ) | queryset.filter(
-                sku_code__icontains=search_query
+                Q(sku_name__icontains=search_query) |
+                Q(sku_code__icontains=search_query) |
+                Q(spu__spu_code__icontains=search_query) |
+                Q(spu__spu_name__icontains=search_query)
             )
-        return queryset.select_related('spu')  # 优化查询，减少数据库访问
+        
+        if category_id and category_id.isdigit():  # 确保 category_id 是有效的数字
+            queryset = queryset.filter(spu__category_id=int(category_id))
+            
+        if color:
+            queryset = queryset.filter(color=color)
+            
+        if material:
+            queryset = queryset.filter(material=material)
+            
+        if plating:
+            queryset = queryset.filter(plating_process=plating)
+        
+        return queryset.select_related('spu', 'spu__category')
         
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        # 基本查询参数
         context['search_query'] = self.request.GET.get('search', '')
-        context['active_menu'] = 'sku'  # 用于高亮左侧菜单
+        context['active_menu'] = 'sku'
+        
+        # 获取所有类目供筛选
+        context['categories'] = Category.objects.filter(is_last_level=True)
+        
+        # 安全地获取 category_id
+        category_id = self.request.GET.get('category', '')
+        context['category_id'] = int(category_id) if category_id.isdigit() else 0
+        
+        # 获取所有可选的颜色、材质和电镀工艺
+        context['colors'] = SKU.objects.exclude(color='').values_list('color', flat=True).distinct()
+        context['materials'] = SKU.objects.exclude(material='').values_list('material', flat=True).distinct()
+        context['platings'] = SKU.objects.exclude(plating_process='').values_list('plating_process', flat=True).distinct()
+        
+        # 当前选中的筛选值
+        context['selected_color'] = self.request.GET.get('color', '')
+        context['selected_material'] = self.request.GET.get('material', '')
+        context['selected_plating'] = self.request.GET.get('plating', '')
+        
         return context
 
 class SKUCreateView(LoginRequiredMixin, CreateView):

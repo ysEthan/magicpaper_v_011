@@ -228,7 +228,12 @@ class SKU(models.Model):
     weight = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='重量(g)')
     status = models.BooleanField(default=True, verbose_name='状态')
     spu = models.ForeignKey(SPU, on_delete=models.CASCADE, related_name='skus', verbose_name='所属SPU')
-    img_url = models.CharField(max_length=255, blank=True, null=True, verbose_name='图片URL')
+    img_url = models.CharField(
+        max_length=255, 
+        blank=True, 
+        null=True, 
+        verbose_name='图片URL'
+    )
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='更新时间')
 

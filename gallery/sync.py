@@ -81,8 +81,8 @@ class ProductSync:
             # 如果还有下一页，递归处理
             if current_page < max_page :
                 time.sleep(1)  # 避免请求过快
-                # next_count = self.sync_products(start_time, end_time, page + 1)
-                # synced_count += next_count
+                next_count = self.sync_products(start_time, end_time, page + 1)
+                synced_count += next_count
 
             return synced_count
 
@@ -112,7 +112,7 @@ class ProductSync:
                 ext = image_url.split('.')[-1].lower()
                 if ext not in ['jpg', 'jpeg', 'png', 'gif']:
                     ext = 'jpg'
-                filename = f"skus/{sku_code}.{ext}"  # 移除时间戳，使用固定文件名
+                filename = f"skus/{sku_code}.{ext}"  # 确保这个路径与 MEDIA_ROOT 相对应
                 
                 try:
                     # 删除旧图片

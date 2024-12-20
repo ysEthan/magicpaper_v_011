@@ -1,6 +1,64 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<style>
+.hover-zoom-container {
+    position: fixed;
+    display: none;
+    z-index: 9999;
+    width: 240px;
+    height: 240px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border-radius: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+}
+
+.avatar.avatar-lg {
+    cursor: zoom-in;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #e5e7eb;
+    background-color: #fff;
+}
+
+.avatar.avatar-lg:hover {
+    border-color: #206bc4;
+}
+
+.table-responsive {
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+.table td {
+    overflow: visible !important;
+    position: relative;
+}
+
+.table td:first-child {
+    min-width: 60px;
+    padding-right: 30px;
+}
+
+.table.table-sm td {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.d-flex.flex-column.gap-1 {
+    gap: 0.3rem !important;
+}
+</style>
+{% endblock %}
+
 {% block content %}
 <div class="container-xl">
     <!-- Page title -->
@@ -38,8 +96,48 @@
     <!-- Search form -->
     <div class="card mb-3">
         <div class="card-body">
-            <form method="get" class="row g-3">
-                <div class="col-12">
+            <form method="get" class="row g-3" id="searchForm">
+                <div class="col-md-2">
+                    <select class="form-select" name="category" onchange="this.form.submit()">
+                        <option value="">-- 按类目筛选 --</option>
+                        {% for category in categories %}
+                            <option value="{{ category.id }}" {% if category_id == category.id %}selected{% endif %}>
+                                {{ category.category_name_en }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <select class="form-select" name="color" onchange="this.form.submit()">
+                        <option value="">-- 按颜色筛选 --</option>
+                        {% for color in colors %}
+                            <option value="{{ color }}" {% if selected_color == color %}selected{% endif %}>
+                                {{ color }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <select class="form-select" name="material" onchange="this.form.submit()">
+                        <option value="">-- 按材质筛选 --</option>
+                        {% for material in materials %}
+                            <option value="{{ material }}" {% if selected_material == material %}selected{% endif %}>
+                                {{ material }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <select class="form-select" name="plating" onchange="this.form.submit()">
+                        <option value="">-- 按电镀筛选 --</option>
+                        {% for plating in platings %}
+                            <option value="{{ plating }}" {% if selected_plating == plating %}selected{% endif %}>
+                                {{ plating }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-md-4">
                     <div class="input-group">
                         <input type="text" class="form-control" name="search" value="{{ search_query }}" placeholder="搜索SKU...">
                         <button class="btn btn-primary" type="submit">
@@ -59,34 +157,60 @@
     <!-- SKU list -->
     <div class="card">
         <div class="table-responsive">
-            <table class="table table-vcenter card-table">
+            <table class="table table-vcenter card-table table-sm">
                 <thead>
                     <tr>
-                        <th>SKU编码</th>
-                        <th>SKU名称</th>
-                        <th>所属SPU</th>
-                        <th>供应商编码</th>
-                        <th>电镀工艺</th>
-                        <th>颜色</th>
-                        <th>材质</th>
-                        <th>尺寸</th>
-                        <th>重量(g)</th>
-                        <th>状态</th>
-                        <th class="w-1"></th>
+                        <th style="width: 50px">图片</th>
+                        <th style="width: 160px">SKU信息</th>
+                        <th style="width: 200px">SPU信息</th>
+                        <th style="width: 140px">SKU属性</th>
+                        <th style="width: 140px">规格尺寸</th>
+                        <th style="width: 100px">供应商</th>
+                        <th style="width: 70px">状态</th>
+                        <th style="width: 110px">创建时间</th>
+                        <th style="width: 120px"></th>
                     </tr>
                 </thead>
                 <tbody>
                     {% for sku in skus %}
                     <tr>
-                        <td>{{ sku.sku_code }}</td>
-                        <td>{{ sku.sku_name }}</td>
-                        <td>{{ sku.spu.spu_name }}</td>
+                        <td>
+                            {% if sku.img_url %}
+                                <span class="avatar avatar-lg rounded" 
+                                      style="background-image: url('/media/{{ sku.img_url }}')"
+                                      data-image-url="/media/{{ sku.img_url }}">
+                                </span>
+                            {% else %}
+                                <span class="avatar avatar-lg rounded d-flex align-items-center justify-content-center">
+                                    <span class="text-muted">无图</span>
+                                </span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column gap-1">
+                                <div class="text-dark">{{ sku.sku_code }}</div>
+                                <div class="text-muted">{{ sku.sku_name }}</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column gap-1">
+                                <div class="text-dark">{{ sku.spu.spu_code }}</div>
+                                <div class="text-muted">{{ sku.spu.spu_name }} ({{ sku.spu.category.category_name_en }})</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column gap-1">
+                                <div class="text-dark">{{ sku.color }}</div>
+                                <div class="text-muted">{{ sku.get_plating_process_display }} / {{ sku.material }}</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column gap-1">
+                                <div class="text-dark">{{ sku.length }}×{{ sku.width }}×{{ sku.height }}mm</div>
+                                <div class="text-muted">重量: {{ sku.weight }}g</div>
+                            </div>
+                        </td>
                         <td>{{ sku.provider_code }}</td>
-                        <td>{{ sku.get_plating_process_display }}</td>
-                        <td>{{ sku.color }}</td>
-                        <td>{{ sku.material }}</td>
-                        <td>{{ sku.dimensions }}</td>
-                        <td>{{ sku.weight }}</td>
                         <td>
                             {% if sku.status %}
                             <span class="badge bg-success">启用</span>
@@ -94,6 +218,7 @@
                             <span class="badge bg-danger">禁用</span>
                             {% endif %}
                         </td>
+                        <td>{{ sku.created_at|date:"Y-m-d H:i" }}</td>
                         <td>
                             <div class="btn-list flex-nowrap">
                                 <a href="{% url 'gallery:sku_edit' sku.id %}" class="btn btn-white btn-sm">
@@ -107,7 +232,7 @@
                     </tr>
                     {% empty %}
                     <tr>
-                        <td colspan="11" class="text-center">暂无数据</td>
+                        <td colspan="9" class="text-center">暂无数据</td>
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -123,7 +248,7 @@
             <ul class="pagination m-0 ms-auto">
                 {% if page_obj.has_previous %}
                 <li class="page-item">
-                    <a class="page-link" href="?page=1{% if search_query %}&search={{ search_query }}{% endif %}">
+                    <a class="page-link" href="?page=1{% if search_query %}&search={{ search_query }}{% endif %}{% if category_id %}&category={{ category_id }}{% endif %}{% if selected_color %}&color={{ selected_color }}{% endif %}{% if selected_material %}&material={{ selected_material }}{% endif %}{% if selected_plating %}&plating={{ selected_plating }}{% endif %}">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M11 7l-5 5l5 5" />
@@ -173,39 +298,81 @@
         {% endif %}
     </div>
 </div>
-{% endblock %}
 
-{% block extra_css %}
-<style>
-    .btn-loading {
-        position: relative;
-        pointer-events: none;
-        color: transparent !important;
-    }
-    .btn-loading:after {
-        content: '';
-        position: absolute;
-        left: calc(50% - .5rem);
-        top: calc(50% - .5rem);
-        width: 1rem;
-        height: 1rem;
-        border: 2px solid #ffffff;
-        border-radius: 50%;
-        border-right-color: transparent;
-        animation: spin .75s linear infinite;
-    }
-    @keyframes spin {
-        100% { transform: rotate(360deg); }
-    }
-</style>
+<!-- 添加放大预览容器 -->
+<div class="hover-zoom-container"></div>
 {% endblock %}
 
 {% block extra_js %}
+{{ block.super }}
 <script>
 document.querySelector('form[action*="sync"]').addEventListener('submit', function(e) {
     var btn = this.querySelector('button[type="submit"]');
     btn.classList.add('btn-loading');
     btn.disabled = true;
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const zoomContainer = document.querySelector('.hover-zoom-container');
+    
+    document.querySelectorAll('.avatar.avatar-lg').forEach(avatar => {
+        // 检查是否有背景图片
+        if (avatar.style.backgroundImage && avatar.style.backgroundImage !== 'none') {
+            avatar.addEventListener('mouseenter', function(e) {
+                const rect = this.getBoundingClientRect();
+                zoomContainer.style.backgroundImage = this.style.backgroundImage;
+                zoomContainer.style.display = 'block';
+                zoomContainer.style.left = (rect.right + 20) + 'px';
+                zoomContainer.style.top = (rect.top - 96) + 'px';
+            });
+            
+            avatar.addEventListener('mouseleave', function() {
+                zoomContainer.style.display = 'none';
+            });
+        }
+
+        // 添加图片加载错误处理
+        const imgUrl = avatar.style.backgroundImage.replace(/url\(['"](.+)['"]\)/, '$1');
+        if (imgUrl !== 'none') {
+            const img = new Image();
+            img.onerror = function() {
+                avatar.style.backgroundImage = 'none';
+                avatar.innerHTML = '<span class="text-muted">无图</span>';
+                avatar.style.cursor = 'default';
+            };
+            img.src = imgUrl;
+        }
+    });
+});
+
+// 添加 ESC 键关闭预览功能
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        document.querySelector('.hover-zoom-container').style.display = 'none';
+    }
+});
+
+// 保持筛选条件
+document.querySelectorAll('select[name]').forEach(select => {
+    select.addEventListener('change', function() {
+        document.getElementById('searchForm').submit();
+    });
+});
+
+// 添加图片加载错误处理
+document.querySelectorAll('.avatar.avatar-lg').forEach(avatar => {
+    const img = new Image();
+    img.onerror = function() {
+        avatar.style.backgroundImage = 'none';
+        avatar.innerHTML = '无图';
+        avatar.style.display = 'flex';
+        avatar.style.alignItems = 'center';
+        avatar.style.justifyContent = 'center';
+        avatar.style.color = '#666';
+    };
+    if (avatar.style.backgroundImage) {
+        img.src = avatar.style.backgroundImage.replace(/url\(['"](.+)['"]\)/, '$1');
+    }
 });
 </script>
 {% endblock %} 
