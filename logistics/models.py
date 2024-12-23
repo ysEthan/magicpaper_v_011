@@ -52,7 +52,8 @@ class Package(models.Model):
     order = models.ForeignKey(
         Order,
         on_delete=models.CASCADE,
-        verbose_name='订单'
+        verbose_name='订单',
+        related_name='package_set'
     )
     tracking_no = models.CharField(
         '跟踪号',

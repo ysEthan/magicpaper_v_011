@@ -160,6 +160,12 @@ LOGGING = {
             'filename': os.path.join(LOG_DIR, 'storage.log'),  # 使用完整路径
             'formatter': 'verbose',
         },
+        'trade_file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(LOG_DIR, 'trade.log'),  # trade应用的日志文件
+            'formatter': 'verbose',
+        },
         'console': {
             'level': 'INFO',
             'class': 'logging.StreamHandler',
@@ -169,6 +175,11 @@ LOGGING = {
     'loggers': {
         'storage': {
             'handlers': ['file', 'console'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'trade': {
+            'handlers': ['trade_file', 'console'],
             'level': 'INFO',
             'propagate': True,
         },

@@ -61,7 +61,8 @@ class Order(models.Model):
         on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        verbose_name='包裹'
+        verbose_name='包裹',
+        related_name='related_order'
     )
 
     class Meta:
