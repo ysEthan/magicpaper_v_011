@@ -65,6 +65,15 @@ class Order(models.Model):
     def __str__(self):
         return f"{self.order_no}"
 
+    def get_sku_stats(self):
+        """获取SKU统计信息"""
+        sku_count = self.cart_set.count()  # SKU种类数
+        total_qty = sum(cart.qty for cart in self.cart_set.all())  # SKU总数量
+        return {
+            'sku_count': sku_count,
+            'total_qty': total_qty
+        }
+
 class Cart(models.Model):
     id = models.AutoField('ID', primary_key=True)
     order = models.ForeignKey(
