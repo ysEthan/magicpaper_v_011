@@ -6,7 +6,8 @@ import requests
 import logging
 from datetime import datetime, timedelta
 from django.utils import timezone
-from .models import Order, Shop
+from .models import Order, Shop, Cart
+from gallery.models import SKU  # 避免循环导入
 
 # 获取logger实例
 logger = logging.getLogger(__name__)
@@ -34,6 +35,73 @@ def generate_sign(body):
         "timestamp": timestamp,
     }
     return params, headers
+
+def get_trade_detail(trade_id):
+    """获取订单明细数据"""
+    body = {
+        "tradeIds": [str(trade_id)]
+    }
+    body_str = json.dumps(body, ensure_ascii=False, separators=(",", ":"))
+    params, headers = generate_sign(body_str)
+    
+    url = "https://openapi.qizhishangke.com/api/openservices/trade/v1/getSalesTradeOrderList"
+    response = requests.post(url, params=params, headers=headers, data=body_str)
+
+    # 打印返回的数据结构
+    print("API返回数据:", response.json()['data'] )
+
+
+    if response.status_code != 200:
+        raise Exception(f"API请求失败: {response.text}")
+        
+    response_data = response.json()
+    if response_data['code'] != 200:
+        raise Exception(f"API返回错误: {response_data['message']}")
+    
+
+    
+    return response_data['data']
+
+def sync_trade_detail(order, trade_id):
+    """同步订单商品明细"""
+    try:
+        # 获取订单明细数据
+        details = get_trade_detail(trade_id)
+        
+        # 删除原有的购物车记录
+        Cart.objects.filter(order=order).delete()
+        
+        # 同步商品明细
+        for item in details:
+            try:
+                # 使用正确的字段名获取SKU编码
+                sku_code = item.get('skuNo')
+                if not sku_code:
+                    logger.error(f"找不到SKU编码字段, 订单号: {order.order_no}, 数据: {item}")
+                    continue
+                    
+                sku = SKU.objects.get(sku_code=sku_code)
+                
+                # 创建购物车记录
+                Cart.objects.create(
+                    order=order,
+                    sku=sku,
+                    qty=int(item.get('num', 1)),
+                    price=float(item.get('price', 0)),
+                    cost=float(item.get('cost', 0)),
+                    discount=float(item.get('discount', 0)),
+                    actual_price=float(item.get('actualPrice', item.get('price', 0))),
+                    is_out_of_stock=False
+                )
+            except SKU.DoesNotExist:
+                logger.error(f"找不到SKU: {sku_code}, 订单号: {order.order_no}")
+                continue
+            except Exception as e:
+                logger.error(f"处理订单商品明细时出错: {str(e)}, 订单号: {order.order_no}")
+                continue
+                
+    except Exception as e:
+        logger.error(f"获取订单明细数据失败: {str(e)}, 订单号: {order.order_no}")
 
 def sync_trade_data(start_date, end_date, page=1):
     """同步订单数据"""
@@ -114,10 +182,15 @@ def sync_trade_data(start_date, end_date, page=1):
         }
 
         try:
-            Order.objects.update_or_create(
-                id=item['tradeId'],  # 查找条件
-                defaults=order_data        # 更新或创建的数据
+            # 创建或更新订单
+            order, created = Order.objects.update_or_create(
+                id=item['tradeId'],
+                defaults=order_data
             )
+            print('处理订单', item['srcTids'], '成功============================================================')
+            # 同步订单商品明细
+            sync_trade_detail(order, item['tradeId'])
+            
         except Exception as e:
             logger.error(f"处理订单 {item['srcTids']} 时出错: {str(e)}")
             continue
