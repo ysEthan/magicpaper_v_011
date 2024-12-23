@@ -1,7 +1,13 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, View
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib import messages
+from django.shortcuts import redirect
 from .models import Order, Shop
+from . import sync
+import logging
+
+logger = logging.getLogger(__name__)
 
 class OrderListView(LoginRequiredMixin, ListView):
     model = Order
@@ -42,3 +48,19 @@ class OrderListView(LoginRequiredMixin, ListView):
         context['selected_status'] = self.request.GET.get('status', '')
         context['status_choices'] = Order.OrderStatus.choices
         return context
+
+class OrderSyncView(LoginRequiredMixin, View):
+    def post(self, request, *args, **kwargs):
+        try:
+            success, message = sync.sync_all_trade()
+            if success:
+                messages.success(request, '订单数据同步成功！')
+                logger.info(f"用户 {request.user.username} 同步订单数据成功")
+            else:
+                messages.error(request, f'同步失败：{message}')
+                logger.error(f"用户 {request.user.username} 同步订单数据失败: {message}")
+        except Exception as e:
+            error_msg = f'同步失败：{str(e)}'
+            messages.error(request, error_msg)
+            logger.error(f"用户 {request.user.username} 同步订单数据失败: {str(e)}")
+        return redirect('trade:order_list')

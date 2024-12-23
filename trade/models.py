@@ -34,84 +34,28 @@ class Order(models.Model):
         COMPLETED = 'completed', _('已完成')
         CANCELLED = 'cancelled', _('已取消')
     
-    id = models.AutoField('ID', primary_key=True)
-    shop = models.ForeignKey(
-        Shop,
-        on_delete=models.PROTECT,
-        verbose_name='店铺'
-    )
-    platform_order_no = models.CharField(
-        '平台订单号',
-        max_length=25
-    )
-    order_no = models.CharField(
-        '订单号',
-        max_length=25
-    )
-    paid_amount = models.DecimalField(
-        '支付金额',
-        max_digits=10,
-        decimal_places=2
-    )
-    freight = models.DecimalField(
-        '运费',
-        max_digits=10,
-        decimal_places=2,
-        default=0
-    )
-    recipient_name = models.CharField(
-        '收件人',
-        max_length=100
-    )
-    recipient_phone = models.CharField(
-        '收件人电话',
-        max_length=20
-    )
-    recipient_email = models.EmailField(
-        '收件人邮箱'
-    )
-    recipient_country = models.CharField(
-        '收件人国家',
-        max_length=50
-    )
-    recipient_state = models.CharField(
-        '收件人州省',
-        max_length=50
-    )
-    recipient_city = models.CharField(
-        '收件人城市',
-        max_length=50
-    )
-    recipient_address = models.CharField(
-        '收件人地址',
-        max_length=100
-    )
+    order_no = models.CharField(max_length=64, unique=True)
+    platform_order_no = models.CharField(max_length=64)
+    shop = models.ForeignKey('Shop', on_delete=models.CASCADE)
     status = models.CharField(
-        '订单状态',
-        max_length=20,
+        max_length=32,
         choices=OrderStatus.choices,
         default=OrderStatus.PENDING
     )
-    system_remark = models.TextField(
-        '系统备注',
-        blank=True
-    )
-    cs_remark = models.TextField(
-        '客服备注',
-        blank=True
-    )
-    buyer_remark = models.TextField(
-        '买家备注',
-        blank=True
-    )
-    created_at = models.DateTimeField(
-        '创建时间',
-        auto_now_add=True
-    )
-    updated_at = models.DateTimeField(
-        '更新时间',
-        auto_now=True
-    )
+    recipient_country = models.CharField(max_length=64)
+    recipient_state = models.CharField(max_length=64)
+    created_at = models.DateTimeField()
+    updated_at = models.DateTimeField(auto_now=True)
+    paid_amount = models.DecimalField(max_digits=10, decimal_places=2)
+    freight = models.DecimalField(max_digits=10, decimal_places=2, default=0)
+    recipient_name = models.CharField(max_length=100)
+    recipient_phone = models.CharField(max_length=20)
+    recipient_email = models.EmailField()
+    recipient_city = models.CharField(max_length=50)
+    recipient_address = models.CharField(max_length=100)
+    system_remark = models.TextField('系统备注', blank=True, default='')
+    cs_remark = models.TextField('客服备注', blank=True, default='')
+    buyer_remark = models.TextField('买家备注', blank=True, default='')
 
     class Meta:
         verbose_name = '订单'
