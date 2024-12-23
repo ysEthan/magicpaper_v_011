@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'muggle',
     'gallery',
     'storage',
-    'trade'
+    'trade',
+    'logistics'
     # 'storage.apps.StorageConfig',
 ]
 
