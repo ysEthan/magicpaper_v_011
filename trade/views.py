@@ -64,3 +64,17 @@ class OrderSyncView(LoginRequiredMixin, View):
             messages.error(request, error_msg)
             logger.error(f"用户 {request.user.username} 同步订单数据失败: {str(e)}")
         return redirect('trade:order_list')
+    def get(self, request, *args, **kwargs):
+        try:
+            success, message = sync.sync_all_trade()
+            if success:
+                messages.success(request, '订单数据同步成功！')
+                logger.info(f"用户 {request.user.username} 同步订单数据成功")
+            else:
+                messages.error(request, f'同步失败：{message}')
+                logger.error(f"用户 {request.user.username} 同步订单数据失败: {message}")
+        except Exception as e:
+            error_msg = f'同步失败：{str(e)}'
+            messages.error(request, error_msg)
+            logger.error(f"用户 {request.user.username} 同步订单数据失败: {str(e)}")
+        return redirect('trade:order_list')
