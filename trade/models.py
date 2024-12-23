@@ -56,6 +56,13 @@ class Order(models.Model):
     system_remark = models.TextField('系统备注', blank=True, default='')
     cs_remark = models.TextField('客服备注', blank=True, default='')
     buyer_remark = models.TextField('买家备注', blank=True, default='')
+    package = models.ForeignKey(
+        'logistics.Package',
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        verbose_name='包裹'
+    )
 
     class Meta:
         verbose_name = '订单'
