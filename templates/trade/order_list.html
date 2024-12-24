@@ -57,6 +57,7 @@
                                 <tr>
                                     <th style="width: 15%">订单信息</th>
                                     <th style="width: 15%">买家信息</th>
+                                    <th style="width: 15%">备注信息</th>
                                     <th style="width: 20%">仓配信息</th>
                                     <th>支付金额</th>
                                     <th>状态</th>
@@ -85,6 +86,32 @@
                                             {% with stats=order.get_sku_stats %}
                                             <small>SKU种类: {{ stats.sku_count }} | 总数量: {{ stats.total_qty }}</small>
                                             {% endwith %}
+                                        </div>
+                                    </td>
+                                    <td style="width: 15%">
+                                        <div class="text-muted small">
+                                            {% if order.buyer_remark %}
+                                            <div class="text-muted" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                <small>买家: {{ order.buyer_remark }}</small><br>
+                                            </div>
+                                            {% endif %}
+                                            
+                                            {% if order.system_remark %}
+                                            <div class="text-muted" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                <small>系统: {{ order.system_remark }}</small><br>
+                                            </div>
+                                            {% endif %}
+
+                                            {% if order.cs_remark %}
+                                            <div class="text-muted" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                <small>客服: {{ order.cs_remark }}</small><br>
+                                            </div>
+                                            {% endif %}
+
+                                            
+                                            {% if not order.buyer_remark and not order.system_remark and not order.cs_remark %}
+                                            <div class="text-center">-</div>
+                                            {% endif %}
                                         </div>
                                     </td>
                                     <td style="width: 20%">
