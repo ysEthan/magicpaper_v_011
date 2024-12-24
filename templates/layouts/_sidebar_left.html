@@ -8,9 +8,11 @@
             {% if user.is_authenticated %}
                 <a href="#" class="nav-link d-flex lh-1 text-reset p-0 align-items-center justify-content-center" data-bs-toggle="dropdown" aria-label="Open user menu">
                     <div class="text-center">
+                        {% load static %}
                         <span class="avatar avatar-lg mb-2" style="background-color: #206bc4">
-                            {{ user.username|first|upper }}
+                            <img src="{% static 'avatars/044m.jpg' %}" alt="">
                         </span>
+
                         <div class="d-none d-xl-block">
                             <div>{{ user.username }}</div>
                         </div>
@@ -53,7 +55,7 @@
                             </svg>
                         </span>
                         <span class="nav-link-title">
-                            首页
+                            首页2
                         </span>
                     </a>
                 </li>

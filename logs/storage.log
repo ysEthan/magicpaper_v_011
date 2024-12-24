@@ -1828,3 +1828,1152 @@ INFO 2024-12-20 16:28:24,451 sync 17868 21016 ≥¢ ‘µ⁄ 1 ¥Œ«Î«ÛAPI
 INFO 2024-12-20 16:28:24,624 sync 17868 21016 ≥…π¶ªÒ»° ˝æ›: ◊‹ ˝=114, µ±«∞“≥=2
 INFO 2024-12-20 16:28:25,836 sync 17868 21016 Õ¨≤ΩÕÍ≥…£¨π≤∏¸–¬ 114 Ãıº«¬º
 INFO 2024-12-20 16:28:25,836 views 17868 21016 ”√ªß Ethan Õ¨≤Ωø‚¥Ê ˝æ›≥…π¶
+ERROR 2024-12-24 14:11:12,483 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:12,488 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:12,521 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:12,553 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:12,564 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:12,575 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:12,623 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:12,654 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:12,685 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:12,714 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:12,803 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:12,892 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:12,932 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:12,985 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,000 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,055 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,071 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,075 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,079 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,084 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,088 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,105 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,120 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,136 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,153 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,170 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,185 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,202 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,207 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,210 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,228 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,232 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,235 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,238 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,241 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,246 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,251 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,255 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,272 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,276 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,280 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,284 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,288 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,292 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,298 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,303 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,307 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,311 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,316 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,321 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,324 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,330 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,335 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,339 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,345 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,350 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,354 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,360 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,364 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,369 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,374 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,378 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,383 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,387 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,391 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,395 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,399 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,403 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,407 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,412 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,416 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,420 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,424 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,429 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,432 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,437 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,441 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,445 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,449 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,454 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,458 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+ERROR 2024-12-24 14:11:13,464 views 2116 21456 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:52,885 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI059R01.jpg
+INFO 2024-12-24 14:13:52,885 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI059R01.jpg
+ERROR 2024-12-24 14:13:52,909 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:52,932 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI059A02.jpg
+INFO 2024-12-24 14:13:52,932 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI059A02.jpg
+ERROR 2024-12-24 14:13:52,936 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:52,937 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/NE060R01.jpg
+INFO 2024-12-24 14:13:52,937 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/NE060R01.jpg
+ERROR 2024-12-24 14:13:52,971 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:52,972 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/NE060A02.jpg
+INFO 2024-12-24 14:13:52,972 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/NE060A02.jpg
+ERROR 2024-12-24 14:13:53,003 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,004 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/SE061R01.jpg
+INFO 2024-12-24 14:13:53,004 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/SE061R01.jpg
+ERROR 2024-12-24 14:13:53,014 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,015 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/SE061A02.jpg
+INFO 2024-12-24 14:13:53,015 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/SE061A02.jpg
+ERROR 2024-12-24 14:13:53,026 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,027 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/BR018B01.jpg
+INFO 2024-12-24 14:13:53,027 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/BR018B01.jpg
+ERROR 2024-12-24 14:13:53,073 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,074 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/BR018B02.jpg
+INFO 2024-12-24 14:13:53,074 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/BR018B02.jpg
+ERROR 2024-12-24 14:13:53,101 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,102 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/NE026D01.jpg
+INFO 2024-12-24 14:13:53,102 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/NE026D01.jpg
+ERROR 2024-12-24 14:13:53,131 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,132 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/BR030W01.jpg
+INFO 2024-12-24 14:13:53,133 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/BR030W01.jpg
+ERROR 2024-12-24 14:13:53,162 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,163 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/BR054B01.jpg
+INFO 2024-12-24 14:13:53,163 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/BR054B01.jpg
+ERROR 2024-12-24 14:13:53,225 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,226 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/BR014B01.jpg
+INFO 2024-12-24 14:13:53,226 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/BR014B01.jpg
+ERROR 2024-12-24 14:13:53,287 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,288 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/EA017B01.jpg
+INFO 2024-12-24 14:13:53,288 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/EA017B01.jpg
+ERROR 2024-12-24 14:13:53,314 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,315 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/EA047B01.jpg
+INFO 2024-12-24 14:13:53,315 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/EA047B01.jpg
+ERROR 2024-12-24 14:13:53,347 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,348 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI048B10.jpg
+INFO 2024-12-24 14:13:53,348 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI048B10.jpg
+ERROR 2024-12-24 14:13:53,359 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,360 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/NE049B01.jpg
+INFO 2024-12-24 14:13:53,360 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/NE049B01.jpg
+ERROR 2024-12-24 14:13:53,394 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,395 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/BR010B01.jpg
+INFO 2024-12-24 14:13:53,395 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/BR010B01.jpg
+ERROR 2024-12-24 14:13:53,405 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,406 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI046B07.jpg
+INFO 2024-12-24 14:13:53,406 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI046B07.jpg
+ERROR 2024-12-24 14:13:53,408 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,409 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI046B08.jpg
+INFO 2024-12-24 14:13:53,409 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI046B08.jpg
+ERROR 2024-12-24 14:13:53,411 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,412 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI046B10.jpg
+INFO 2024-12-24 14:13:53,413 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI046B10.jpg
+ERROR 2024-12-24 14:13:53,415 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,415 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI046B11.jpg
+INFO 2024-12-24 14:13:53,416 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI046B11.jpg
+ERROR 2024-12-24 14:13:53,418 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,419 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/NE037B01.jpg
+INFO 2024-12-24 14:13:53,419 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/NE037B01.jpg
+ERROR 2024-12-24 14:13:53,428 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,429 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/NE038B01.jpg
+INFO 2024-12-24 14:13:53,429 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/NE038B01.jpg
+ERROR 2024-12-24 14:13:53,439 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,440 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/EA039B01.jpg
+INFO 2024-12-24 14:13:53,441 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/EA039B01.jpg
+ERROR 2024-12-24 14:13:53,449 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,450 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/EA040B01.jpg
+INFO 2024-12-24 14:13:53,450 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/EA040B01.jpg
+ERROR 2024-12-24 14:13:53,461 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,462 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/NE041B01.jpg
+INFO 2024-12-24 14:13:53,462 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/NE041B01.jpg
+ERROR 2024-12-24 14:13:53,477 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,478 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/NE042B01.jpg
+INFO 2024-12-24 14:13:53,478 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/NE042B01.jpg
+ERROR 2024-12-24 14:13:53,488 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,489 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/NE043B01.jpg
+INFO 2024-12-24 14:13:53,490 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/NE043B01.jpg
+ERROR 2024-12-24 14:13:53,501 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,502 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/EA044B01.jpg
+INFO 2024-12-24 14:13:53,502 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/EA044B01.jpg
+ERROR 2024-12-24 14:13:53,505 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,506 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI045B01.jpg
+INFO 2024-12-24 14:13:53,506 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI045B01.jpg
+ERROR 2024-12-24 14:13:53,508 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,509 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI046B09.jpg
+INFO 2024-12-24 14:13:53,509 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI046B09.jpg
+ERROR 2024-12-24 14:13:53,520 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,521 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI048B11.jpg
+INFO 2024-12-24 14:13:53,521 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI048B11.jpg
+ERROR 2024-12-24 14:13:53,523 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,524 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI048B09.jpg
+INFO 2024-12-24 14:13:53,524 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI048B09.jpg
+ERROR 2024-12-24 14:13:53,530 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,530 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI048B08.jpg
+INFO 2024-12-24 14:13:53,530 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI048B08.jpg
+ERROR 2024-12-24 14:13:53,532 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,533 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI048B07.jpg
+INFO 2024-12-24 14:13:53,533 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI048B07.jpg
+ERROR 2024-12-24 14:13:53,535 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,536 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI053B11.jpg
+INFO 2024-12-24 14:13:53,536 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI053B11.jpg
+ERROR 2024-12-24 14:13:53,539 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,540 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI027B10.jpg
+INFO 2024-12-24 14:13:53,540 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI027B10.jpg
+ERROR 2024-12-24 14:13:53,543 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,545 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI027B11.jpg
+INFO 2024-12-24 14:13:53,545 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI027B11.jpg
+ERROR 2024-12-24 14:13:53,548 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,549 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/NE013B01.jpg
+INFO 2024-12-24 14:13:53,550 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/NE013B01.jpg
+ERROR 2024-12-24 14:13:53,561 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,562 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI015B07.jpg
+INFO 2024-12-24 14:13:53,562 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI015B07.jpg
+ERROR 2024-12-24 14:13:53,564 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,565 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI015B08.jpg
+INFO 2024-12-24 14:13:53,565 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI015B08.jpg
+ERROR 2024-12-24 14:13:53,567 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,568 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI015B09.jpg
+INFO 2024-12-24 14:13:53,568 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI015B09.jpg
+ERROR 2024-12-24 14:13:53,570 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,571 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI015B10.jpg
+INFO 2024-12-24 14:13:53,571 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI015B10.jpg
+ERROR 2024-12-24 14:13:53,574 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,576 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI015B11.jpg
+INFO 2024-12-24 14:13:53,576 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI015B11.jpg
+ERROR 2024-12-24 14:13:53,578 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,579 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/NE016B01.jpg
+INFO 2024-12-24 14:13:53,579 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/NE016B01.jpg
+ERROR 2024-12-24 14:13:53,582 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,583 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/EA022B01.jpg
+INFO 2024-12-24 14:13:53,583 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/EA022B01.jpg
+ERROR 2024-12-24 14:13:53,587 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,588 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/NE023B01.jpg
+INFO 2024-12-24 14:13:53,588 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/NE023B01.jpg
+ERROR 2024-12-24 14:13:53,591 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,592 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI024B07.jpg
+INFO 2024-12-24 14:13:53,592 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI024B07.jpg
+ERROR 2024-12-24 14:13:53,595 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,596 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI024B08.jpg
+INFO 2024-12-24 14:13:53,596 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI024B08.jpg
+ERROR 2024-12-24 14:13:53,598 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,599 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI024B09.jpg
+INFO 2024-12-24 14:13:53,599 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI024B09.jpg
+ERROR 2024-12-24 14:13:53,601 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,602 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI024B10.jpg
+INFO 2024-12-24 14:13:53,602 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI024B10.jpg
+ERROR 2024-12-24 14:13:53,605 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,606 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI024B11.jpg
+INFO 2024-12-24 14:13:53,606 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI024B11.jpg
+ERROR 2024-12-24 14:13:53,609 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,610 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI027B07.jpg
+INFO 2024-12-24 14:13:53,610 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI027B07.jpg
+ERROR 2024-12-24 14:13:53,613 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,614 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI027B08.jpg
+INFO 2024-12-24 14:13:53,614 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI027B08.jpg
+ERROR 2024-12-24 14:13:53,617 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,618 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI027B09.jpg
+INFO 2024-12-24 14:13:53,618 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI027B09.jpg
+ERROR 2024-12-24 14:13:53,621 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,622 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI029B07.jpg
+INFO 2024-12-24 14:13:53,622 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI029B07.jpg
+ERROR 2024-12-24 14:13:53,625 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,626 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI029B08.jpg
+INFO 2024-12-24 14:13:53,626 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI029B08.jpg
+ERROR 2024-12-24 14:13:53,629 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,630 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI029B09.jpg
+INFO 2024-12-24 14:13:53,630 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI029B09.jpg
+ERROR 2024-12-24 14:13:53,633 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,634 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI029B10.jpg
+INFO 2024-12-24 14:13:53,634 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI029B10.jpg
+ERROR 2024-12-24 14:13:53,637 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,638 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI029B11.jpg
+INFO 2024-12-24 14:13:53,639 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI029B11.jpg
+ERROR 2024-12-24 14:13:53,642 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,643 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI050B07.jpg
+INFO 2024-12-24 14:13:53,643 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI050B07.jpg
+ERROR 2024-12-24 14:13:53,645 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,646 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI050B08.jpg
+INFO 2024-12-24 14:13:53,646 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI050B08.jpg
+ERROR 2024-12-24 14:13:53,649 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,650 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI050B09.jpg
+INFO 2024-12-24 14:13:53,650 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI050B09.jpg
+ERROR 2024-12-24 14:13:53,653 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,654 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI050B10.jpg
+INFO 2024-12-24 14:13:53,654 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI050B10.jpg
+ERROR 2024-12-24 14:13:53,656 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,657 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI050B11.jpg
+INFO 2024-12-24 14:13:53,657 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI050B11.jpg
+ERROR 2024-12-24 14:13:53,660 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,661 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI051B07.jpg
+INFO 2024-12-24 14:13:53,661 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI051B07.jpg
+ERROR 2024-12-24 14:13:53,663 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,664 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI051B08.jpg
+INFO 2024-12-24 14:13:53,664 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI051B08.jpg
+ERROR 2024-12-24 14:13:53,667 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,668 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI051B09.jpg
+INFO 2024-12-24 14:13:53,669 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI051B09.jpg
+ERROR 2024-12-24 14:13:53,671 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,672 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI051B10.jpg
+INFO 2024-12-24 14:13:53,672 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI051B10.jpg
+ERROR 2024-12-24 14:13:53,673 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,675 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI051B11.jpg
+INFO 2024-12-24 14:13:53,675 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI051B11.jpg
+ERROR 2024-12-24 14:13:53,677 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,678 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI052B07.jpg
+INFO 2024-12-24 14:13:53,678 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI052B07.jpg
+ERROR 2024-12-24 14:13:53,680 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,682 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI052B08.jpg
+INFO 2024-12-24 14:13:53,682 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI052B08.jpg
+ERROR 2024-12-24 14:13:53,685 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,686 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI052B09.jpg
+INFO 2024-12-24 14:13:53,686 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI052B09.jpg
+ERROR 2024-12-24 14:13:53,688 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,689 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI052B10.jpg
+INFO 2024-12-24 14:13:53,689 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI052B10.jpg
+ERROR 2024-12-24 14:13:53,691 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,692 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI052B11.jpg
+INFO 2024-12-24 14:13:53,692 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI052B11.jpg
+ERROR 2024-12-24 14:13:53,695 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,695 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI053B07.jpg
+INFO 2024-12-24 14:13:53,696 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI053B07.jpg
+ERROR 2024-12-24 14:13:53,699 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,700 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI053B08.jpg
+INFO 2024-12-24 14:13:53,700 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI053B08.jpg
+ERROR 2024-12-24 14:13:53,702 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,703 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI053B09.jpg
+INFO 2024-12-24 14:13:53,703 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI053B09.jpg
+ERROR 2024-12-24 14:13:53,706 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,706 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/RI053B10.jpg
+INFO 2024-12-24 14:13:53,706 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/RI053B10.jpg
+ERROR 2024-12-24 14:13:53,709 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,710 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/BR034W01.jpg
+INFO 2024-12-24 14:13:53,710 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/BR034W01.jpg
+ERROR 2024-12-24 14:13:53,712 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,713 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/NE033W01.jpg
+INFO 2024-12-24 14:13:53,713 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/NE033W01.jpg
+ERROR 2024-12-24 14:13:53,716 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,717 views 20668 18980 ≥¢ ‘∂¡»°Õº∆¨: E:\code\magicpaper_v_011\media\skus/NE011B01.jpg
+INFO 2024-12-24 14:13:53,717 views 20668 18980 Õº∆¨Œƒº˛¥Ê‘⁄: E:\code\magicpaper_v_011\media\skus/NE011B01.jpg
+ERROR 2024-12-24 14:13:53,720 views 20668 18980 ¥¶¿ÌÕº∆¨ ß∞‹: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+Traceback (most recent call last):
+  File "E:\code\magicpaper_v_011\storage\views.py", line 139, in download_stock_list
+    img.anchor = OneCellAnchor(pos=marker, ext={'width': pixels_to_EMU(70), 'height': pixels_to_EMU(70)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\drawing\spreadsheet_drawing.py", line 178, in __init__
+    self.ext = ext
+    ^^^^^^^^
+  File "C:\Users\75781\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.drawing.spreadsheet_drawing.OneCellAnchor'>.ext should be <class 'openpyxl.drawing.xdr.XDRPositiveSize2D'> but value is <class 'dict'>
+INFO 2024-12-24 14:13:53,751 views 20668 18980 ≥…π¶…˙≥… Excel Œƒº˛

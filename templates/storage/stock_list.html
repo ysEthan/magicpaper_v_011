@@ -153,13 +153,12 @@
                         <option value="">-- 按产品类型筛选 --</option>
                         {% for type in product_types %}
                             <option value="{{ type.value }}" {% if selected_product_type == type.value %}selected{% endif %}>
-{#                                {{ type.label }} ({{ type.count }})#}
-                            {{ type.label }}
+                                {{ type.label }}
                             </option>
                         {% endfor %}
                     </select>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <div class="input-group">
                         <input type="text" class="form-control" name="search" value="{{ search_query }}" placeholder="搜索SKU...">
                         <button class="btn btn-primary" type="submit">
@@ -171,6 +170,18 @@
                             搜索
                         </button>
                     </div>
+                </div>
+                <div class="col-md-1">
+                    <a href="?{% if search_query %}search={{ search_query }}&{% endif %}{% if selected_warehouse %}warehouse={{ selected_warehouse }}&{% endif %}{% if selected_product_type %}product_type={{ selected_product_type }}&{% endif %}download=true" 
+                       class="btn btn-primary w-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                            <path d="M7 11l5 5l5 -5" />
+                            <path d="M12 4l0 12" />
+                        </svg>
+                        下载
+                    </a>
                 </div>
             </form>
         </div>
