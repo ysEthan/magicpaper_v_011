@@ -6,15 +6,15 @@
     position: fixed;
     display: none;
     z-index: 9999;
-    width: 240px;
-    height: 240px;
+    width: 300px;
+    height: 300px;
     background-color: white;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
     border-radius: 4px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 10px;
+    padding: 0;
 }
 
 .avatar.avatar-lg {
@@ -132,28 +132,7 @@
 {% block content %}
 <div class="container-xl">
     <!-- Page title -->
-    <div class="page-header d-print-none">
-        <div class="row align-items-center">
-            <div class="col">
-                <h2 class="page-title">库存管理</h2>
-            </div>
-            <div class="col-auto ms-auto d-print-none">
-                <div class="btn-list">
-                    <form action="{% url 'storage:stock_sync' %}" method="post" style="display: inline;">
-                        {% csrf_token %}
-                        <button type="submit" class="btn btn-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-refresh" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4"></path>
-                                <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4"></path>
-                            </svg>
-                            同步库存
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <!-- Search form -->
     <div class="card mb-3">
@@ -295,24 +274,40 @@
 
 {% block extra_js %}
 <script>
-document.querySelector('form[action*="sync"]').addEventListener('submit', function(e) {
-    var btn = this.querySelector('button[type="submit"]');
-    btn.classList.add('btn-loading');
-    btn.disabled = true;
-});
-
 document.addEventListener('DOMContentLoaded', function() {
     const zoomContainer = document.querySelector('.hover-zoom-container');
     
     document.querySelectorAll('.avatar.avatar-lg').forEach(avatar => {
         // 检查是否有背景图片
-        if (avatar.style.backgroundImage && avatar.style.backgroundImage !== 'none') {
+        const backgroundImage = window.getComputedStyle(avatar).backgroundImage;
+        if (backgroundImage && backgroundImage !== 'none') {
             avatar.addEventListener('mouseenter', function(e) {
                 const rect = this.getBoundingClientRect();
-                zoomContainer.style.backgroundImage = this.style.backgroundImage;
+                zoomContainer.style.backgroundImage = backgroundImage;
                 zoomContainer.style.display = 'block';
-                zoomContainer.style.left = (rect.right + 20) + 'px';
-                zoomContainer.style.top = (rect.top - 96) + 'px';
+                
+                // 调整预览图片的位置
+                const windowWidth = window.innerWidth;
+                const windowHeight = window.innerHeight;
+                const zoomWidth = 300;  // 预览容器宽度
+                const zoomHeight = 300; // 预览容器高度
+                
+                // 计算左侧位置，确保不会超出窗口右边界
+                let left = rect.right + 20;
+                if (left + zoomWidth > windowWidth) {
+                    left = rect.left - zoomWidth - 20;
+                }
+                
+                // 计算顶部位置，确保预览窗口完全可见
+                let top = rect.top - (zoomHeight - rect.height) / 2;
+                if (top < 0) {
+                    top = 0;
+                } else if (top + zoomHeight > windowHeight) {
+                    top = windowHeight - zoomHeight;
+                }
+                
+                zoomContainer.style.left = left + 'px';
+                zoomContainer.style.top = top + 'px';
             });
             
             avatar.addEventListener('mouseleave', function() {
@@ -321,8 +316,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // 添加图片加载错误处理
-        const imgUrl = avatar.style.backgroundImage.replace(/url\(['"](.+)['"]\)/, '$1');
-        if (imgUrl !== 'none') {
+        const imgUrl = backgroundImage ? backgroundImage.replace(/url\(['"](.+)['"]\)/, '$1') : '';
+        if (imgUrl && imgUrl !== 'none') {
             const img = new Image();
             img.onerror = function() {
                 avatar.style.backgroundImage = 'none';

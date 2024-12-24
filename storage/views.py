@@ -68,3 +68,13 @@ class StockSyncView(LoginRequiredMixin, View):
             messages.error(request, error_msg)
             logger.error(f"用户 {request.user.username} 同步库存数据失败: {str(e)}")
         return redirect('storage:stock_list')
+    def get(self, request, *args, **kwargs):
+        try:
+            sync.sync_all_stock()
+            messages.success(request, '库存数据同步成功！')
+            logger.info(f"用户 {request.user.username} 同步库存数据成功")
+        except Exception as e:
+            error_msg = f'同步失败：{str(e)}'
+            messages.error(request, error_msg)
+            logger.error(f"用户 {request.user.username} 同步库存数据失败: {str(e)}")
+        return redirect('storage:stock_list')
