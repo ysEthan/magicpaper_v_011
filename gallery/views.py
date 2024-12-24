@@ -30,7 +30,8 @@ class CategoryListView(LoginRequiredMixin, ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['search_query'] = self.request.GET.get('search', '')
-        context['active_menu'] = 'category'  # 用于高亮左侧菜单
+        context['active_menu'] = 'gallery'  # 修改为 gallery
+        context['active_submenu'] = 'category'  # 添加 active_submenu
         return context
 
 class CategoryCreateView(LoginRequiredMixin, CreateView):
@@ -44,7 +45,8 @@ class CategoryCreateView(LoginRequiredMixin, CreateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = '新增类目'
-        context['active_menu'] = 'category'
+        context['active_menu'] = 'gallery'  # 修改为 gallery
+        context['active_submenu'] = 'category'  # 添加 active_submenu
         return context
 
     def form_valid(self, form):
@@ -62,7 +64,8 @@ class CategoryUpdateView(LoginRequiredMixin, UpdateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = '编辑类目'
-        context['active_menu'] = 'category'
+        context['active_menu'] = 'gallery'  # 修改为 gallery
+        context['active_submenu'] = 'category'  # 添加 active_submenu
         return context
 
     def form_valid(self, form):
@@ -78,7 +81,8 @@ class CategoryDeleteView(LoginRequiredMixin, DeleteView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = '删除类目'
-        context['active_menu'] = 'category'
+        context['active_menu'] = 'gallery'  # 修改为 gallery
+        context['active_submenu'] = 'category'  # 添加 active_submenu
         return context
 
     def delete(self, request, *args, **kwargs):
@@ -106,7 +110,8 @@ class SPUListView(LoginRequiredMixin, ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['search_query'] = self.request.GET.get('search', '')
-        context['active_menu'] = 'spu'  # 用于高亮左侧菜单
+        context['active_menu'] = 'gallery'  # 修改为 gallery
+        context['active_submenu'] = 'spu'  # 添加 active_submenu
         return context
 
 class SPUCreateView(LoginRequiredMixin, CreateView):
@@ -120,7 +125,8 @@ class SPUCreateView(LoginRequiredMixin, CreateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = '新增SPU'
-        context['active_menu'] = 'spu'
+        context['active_menu'] = 'gallery'  # 修改为 gallery
+        context['active_submenu'] = 'spu'  # 添加 active_submenu
         return context
 
     def form_valid(self, form):
@@ -138,7 +144,8 @@ class SPUUpdateView(LoginRequiredMixin, UpdateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = '编辑SPU'
-        context['active_menu'] = 'spu'
+        context['active_menu'] = 'gallery'  # 修改为 gallery
+        context['active_submenu'] = 'spu'  # 添加 active_submenu
         return context
 
     def form_valid(self, form):
@@ -154,7 +161,8 @@ class SPUDeleteView(LoginRequiredMixin, DeleteView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = '删除SPU'
-        context['active_menu'] = 'spu'
+        context['active_menu'] = 'gallery'  # 修改为 gallery
+        context['active_submenu'] = 'spu'  # 添加 active_submenu
         return context
 
     def delete(self, request, *args, **kwargs):
@@ -209,7 +217,8 @@ class SKUListView(LoginRequiredMixin, ListView):
         context = super().get_context_data(**kwargs)
         # 基本查询参数
         context['search_query'] = self.request.GET.get('search', '')
-        context['active_menu'] = 'sku'
+        context['active_menu'] = 'gallery'  # 修改为 gallery
+        context['active_submenu'] = 'sku'  # 添加 active_submenu
         
         # 获取有 SKU 关联的类目
         context['categories'] = Category.objects.filter(
@@ -275,7 +284,8 @@ class SKUCreateView(LoginRequiredMixin, CreateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = '新增SKU'
-        context['active_menu'] = 'sku'
+        context['active_menu'] = 'gallery'  # 修改为 gallery
+        context['active_submenu'] = 'sku'  # 添加 active_submenu
         return context
 
     def form_valid(self, form):
@@ -294,7 +304,8 @@ class SKUUpdateView(LoginRequiredMixin, UpdateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = '编辑SKU'
-        context['active_menu'] = 'sku'
+        context['active_menu'] = 'gallery'  # 修改为 gallery
+        context['active_submenu'] = 'sku'  # 添加 active_submenu
         return context
 
     def form_valid(self, form):
@@ -310,7 +321,8 @@ class SKUDeleteView(LoginRequiredMixin, DeleteView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = '删除SKU'
-        context['active_menu'] = 'sku'
+        context['active_menu'] = 'gallery'  # 修改为 gallery
+        context['active_submenu'] = 'sku'  # 添加 active_submenu
         return context
 
     def delete(self, request, *args, **kwargs):
