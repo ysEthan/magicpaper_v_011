@@ -13,7 +13,7 @@ class StockListView(LoginRequiredMixin, ListView):
     model = Stock
     template_name = 'storage/stock_list.html'
     context_object_name = 'stocks'
-    paginate_by = 10
+    paginate_by = 100
     login_url = '/muggle/login/'
     
     def get_queryset(self):
