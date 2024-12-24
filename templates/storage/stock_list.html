@@ -1,5 +1,134 @@
 {% extends "base.html" %}
 
+{% block extra_css %}
+<style>
+.hover-zoom-container {
+    position: fixed;
+    display: none;
+    z-index: 9999;
+    width: 240px;
+    height: 240px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border-radius: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+}
+
+.avatar.avatar-lg {
+    cursor: zoom-in;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e5e7eb;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.avatar.avatar-lg:hover {
+    border-color: #206bc4;
+}
+
+.table-responsive {
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+.table td {
+    overflow: visible !important;
+    position: relative;
+    vertical-align: middle;
+}
+
+.table td:first-child {
+    min-width: 100px;
+    width: 100px;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table td:first-child .avatar {
+    margin: 0;
+    border-radius: 0;
+}
+
+.table th.sku-info-col,
+.table td.sku-info-col {
+    min-width: 300px;
+    max-width: 300px;
+    width: 300px;
+}
+
+.table th.warehouse-col,
+.table td.warehouse-col {
+    min-width: 120px;
+}
+
+.table th.stock-col,
+.table td.stock-col {
+    min-width: 100px;
+}
+
+.table th.cost-col,
+.table td.cost-col {
+    min-width: 100px;
+}
+
+.table th.time-col,
+.table td.time-col {
+    min-width: 150px;
+}
+
+.avatar.avatar-lg.no-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8fafc;
+}
+
+.avatar.avatar-lg.no-image .text-muted {
+    font-size: 12px;
+}
+
+/* 移除表格所有内边距 */
+.table {
+    margin-bottom: 0;
+}
+
+.table > :not(caption) > * > * {
+    padding: 0;
+}
+
+.table td, .table th {
+    padding: 0;
+}
+
+/* 调整信息列的内边距，保持可读性 */
+.table td.sku-info-col {
+    padding: 8px;
+}
+
+.table td.warehouse-col,
+.table td.stock-col,
+.table td.cost-col,
+.table td.time-col {
+    padding: 8px;
+}
+
+/* 表头保持一定的内边距 */
+.table thead th {
+    padding: 8px;
+    background-color: #f8fafc;
+}
+</style>
+{% endblock %}
+
 {% block content %}
 <div class="container-xl">
     <!-- Page title -->
@@ -15,7 +144,7 @@
                         <button type="submit" class="btn btn-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-refresh" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4"></path>
+                                <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4"></path>
                                 <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4"></path>
                             </svg>
                             同步库存
@@ -36,6 +165,17 @@
                         {% for warehouse in warehouses %}
                             <option value="{{ warehouse.id }}" {% if selected_warehouse == warehouse.id|stringformat:"i" %}selected{% endif %}>
                                 {{ warehouse.name }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" name="product_type" onchange="this.form.submit()">
+                        <option value="">-- 按产品类型筛选 --</option>
+                        {% for type in product_types %}
+                            <option value="{{ type.value }}" {% if selected_product_type == type.value %}selected{% endif %}>
+{#                                {{ type.label }} ({{ type.count }})#}
+                            {{ type.label }}
                             </option>
                         {% endfor %}
                     </select>
@@ -62,30 +202,44 @@
             <table class="table table-vcenter card-table">
                 <thead>
                     <tr>
-                        <th>SKU信息</th>
-                        <th>所属仓库</th>
-                        <th>库存数量</th>
-                        <th>平均成本</th>
-                        <th>更新时间</th>
+                        <th style="width: 100px">图片</th>
+                        <th class="sku-info-col">SKU信息</th>
+                        <th class="warehouse-col">所属仓库</th>
+                        <th class="stock-col">库存数量</th>
+                        <th class="cost-col">平均成本</th>
+                        <th class="time-col">更新时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     {% for stock in stocks %}
                     <tr>
                         <td>
+                            {% if stock.sku.img_url %}
+                                <span class="avatar avatar-lg" 
+                                      style="background-image: url('/media/{{ stock.sku.img_url }}')"
+                                      data-image-url="/media/{{ stock.sku.img_url }}">
+                                </span>
+                            {% else %}
+                                <span class="avatar avatar-lg no-image">
+                                    <span class="text-muted">无图</span>
+                                </span>
+                            {% endif %}
+                        </td>
+                        <td class="sku-info-col">
                             <div class="d-flex flex-column gap-1">
                                 <div>{{ stock.sku.sku_code }}</div>
                                 <div class="text-muted">{{ stock.sku.sku_name }}</div>
+                                <div class="text-muted small">类型：{{ stock.sku.spu.get_product_type_display }}</div>
                             </div>
                         </td>
-                        <td>{{ stock.warehouse.name }}</td>
-                        <td>{{ stock.stock_num }}</td>
-                        <td>{{ stock.avg_cost }}</td>
-                        <td>{{ stock.updated_at|date:"Y-m-d H:i" }}</td>
+                        <td class="warehouse-col">{{ stock.warehouse.name }}</td>
+                        <td class="stock-col">{{ stock.stock_num }}</td>
+                        <td class="cost-col">{{ stock.avg_cost }}</td>
+                        <td class="time-col">{{ stock.updated_at|date:"Y-m-d H:i" }}</td>
                     </tr>
                     {% empty %}
                     <tr>
-                        <td colspan="5" class="text-center">暂无数据</td>
+                        <td colspan="6" class="text-center">暂无数据</td>
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -135,7 +289,10 @@
     </div>
 </div>
 
-<!-- 添加加载动画的 JavaScript -->
+<!-- 添加放大预览容器 -->
+<div class="hover-zoom-container"></div>
+{% endblock %}
+
 {% block extra_js %}
 <script>
 document.querySelector('form[action*="sync"]').addEventListener('submit', function(e) {
@@ -143,6 +300,45 @@ document.querySelector('form[action*="sync"]').addEventListener('submit', functi
     btn.classList.add('btn-loading');
     btn.disabled = true;
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const zoomContainer = document.querySelector('.hover-zoom-container');
+    
+    document.querySelectorAll('.avatar.avatar-lg').forEach(avatar => {
+        // 检查是否有背景图片
+        if (avatar.style.backgroundImage && avatar.style.backgroundImage !== 'none') {
+            avatar.addEventListener('mouseenter', function(e) {
+                const rect = this.getBoundingClientRect();
+                zoomContainer.style.backgroundImage = this.style.backgroundImage;
+                zoomContainer.style.display = 'block';
+                zoomContainer.style.left = (rect.right + 20) + 'px';
+                zoomContainer.style.top = (rect.top - 96) + 'px';
+            });
+            
+            avatar.addEventListener('mouseleave', function() {
+                zoomContainer.style.display = 'none';
+            });
+        }
+
+        // 添加图片加载错误处理
+        const imgUrl = avatar.style.backgroundImage.replace(/url\(['"](.+)['"]\)/, '$1');
+        if (imgUrl !== 'none') {
+            const img = new Image();
+            img.onerror = function() {
+                avatar.style.backgroundImage = 'none';
+                avatar.innerHTML = '<span class="text-muted">无图</span>';
+                avatar.style.cursor = 'default';
+            };
+            img.src = imgUrl;
+        }
+    });
+});
+
+// 添加 ESC 键关闭预览功能
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        document.querySelector('.hover-zoom-container').style.display = 'none';
+    }
+});
 </script>
-{% endblock %}
 {% endblock %} 
