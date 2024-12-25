@@ -49,7 +49,8 @@ class StockListView(LoginRequiredMixin, ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['search_query'] = self.request.GET.get('search', '')
-        context['active_menu'] = 'stock'
+        context['active_menu'] = 'storage'
+        context['active_submenu'] = 'stock'
         context['warehouses'] = Warehouse.objects.all()
         context['selected_warehouse'] = self.request.GET.get('warehouse', '')
         
