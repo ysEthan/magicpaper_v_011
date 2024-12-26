@@ -73,7 +73,7 @@
                                             <div class="col-md-3">
                                                 <div class="mb-3">
                                                     <input type="text" class="form-control {% if form.sku_code.errors %}is-invalid{% endif %}" name="sku_code"
-                                                           placeholder="SKU编码" required value="{{ form.sku_code.value|default:'' }} " disabled>
+                                                           placeholder="SKU编码" value="{{ generated_sku_code }}" readonly>
                                                     {% if form.sku_code.errors %}
                                                         <div class="invalid-feedback">{{ form.sku_code.errors.0 }}</div>
                                                     {% endif %}
@@ -82,7 +82,7 @@
                                             <div class="col-md-3">
                                                 <div class="mb-3">
                                                     <input type="text" class="form-control {% if form.sku_name.errors %}is-invalid{% endif %}" name="sku_name"
-                                                           placeholder="SKU名称" required value="{{ form.sku_name.value|default:'' }}">
+                                                           placeholder="SKU名称" required value="{{ form.sku_name.value|default:'' }}" >
                                                     {% if form.sku_name.errors %}
                                                         <div class="invalid-feedback">{{ form.sku_name.errors.0 }}</div>
                                                     {% endif %}
@@ -90,27 +90,7 @@
                                             </div>
                                         </div>
 
-                                        <!-- 基础信息输入框 第一行  -->
-                                        <div class="row g-2">
-                                            <div class="col-md-3">
 
-                                                <div class="mb-3">
-
-                                                    <input type="text" class="form-control"
-                                                           name="example-disabled-input" placeholder="Disabled..."
-                                                           value="Well, she turned me into a newt." disabled>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Readonly</label>
-                                                    <input type="text" class="form-control"
-                                                           name="example-disabled-input" placeholder="Readonly..."
-                                                           value="Well, how'd you become king, then?" readonly>
-                                                </div>
-
-
-
-                                            </div>
-                                        </div>
 
 
 
@@ -237,8 +217,54 @@
                                         </div>
 
                                         <!-- SPU信息输入框  -->
+                                        <div class="row g-12">
+                                            <div class="col-md-12">
+
+                                                <div class="mb-3">
+
+                                                    <div class="form-selectgroup">
+                                                        <label class="form-selectgroup-item">
+                                                            <input type="radio" name="icons" value="home"
+                                                                   class="form-selectgroup-input" checked>
+                                                            <span class="form-selectgroup-label">引用现有SPU</span>
+                                                        </label>
+                                                        <label class="form-selectgroup-item">
+                                                            <input type="radio" name="icons" value="user"
+                                                                   class="form-selectgroup-input">
+                                                            <span class="form-selectgroup-label">直接新建SPU</span>
+                                                        </label>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+
                                         <div class="row g-2">
+
+
+
+
                                             <div class="col-md-2">
+                                                <div class="mb-3">
+                                                    <select class="form-select {% if form.category.errors %}is-invalid{% endif %}" name="category" required>
+                                                        <option value="">选择类目</option>
+                                                        {% for category in categories %}
+                                                            <option value="{{ category.id }}" {% if form.category.value|stringformat:"s" == category.id|stringformat:"s" %}selected{% endif %}>
+                                                                {{ category.category_name_zh }} {% if category.category_name_en %}({{ category.category_name_en }}){% endif %}
+                                                            </option>
+                                                        {% endfor %}
+                                                    </select>
+                                                    {% if form.category.errors %}
+                                                        <div class="invalid-feedback">{{ form.category.errors.0 }}</div>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2">
+
                                                 <div class="mb-3">
                                                     <select class="form-select {% if form.spu.errors %}is-invalid{% endif %}" name="spu" required>
                                                         <option value="">选择SPU</option>
@@ -254,6 +280,11 @@
                                                 </div>
                                             </div>
                                         </div>
+
+
+
+
+
                                     </div>
                                 </div>
 

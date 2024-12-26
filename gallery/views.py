@@ -288,10 +288,31 @@ class SKUCreateView(LoginRequiredMixin, CreateView):
         context['active_menu'] = 'gallery'
         context['active_submenu'] = 'sku'
         context['spus'] = SPU.objects.filter(status=True).order_by('-created_at')
+        
+        # 获取所有可用的类目
+        context['categories'] = Category.objects.filter(status=True).order_by('level', 'rank_id')
+        
+        # 获取最新的SKU ID并生成新的SKU编码
+        try:
+            latest_sku = SKU.objects.latest('id')
+            next_id = latest_sku.id + 1
+        except SKU.DoesNotExist:
+            next_id = 1
+        
+        context['generated_sku_code'] = f'SKU{next_id:06d}'  # 生成6位数的编码
         return context
 
     def form_valid(self, form):
         try:
+            # 设置SKU编码
+            try:
+                latest_sku = SKU.objects.latest('id')
+                next_id = latest_sku.id + 1
+            except SKU.DoesNotExist:
+                next_id = 1
+            
+            form.instance.sku_code = f'SKU{next_id:06d}'
+            
             # 处理空值，设置默认值为0
             if not form.cleaned_data.get('length'):
                 form.instance.length = 0
