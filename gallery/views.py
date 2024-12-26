@@ -6,6 +6,8 @@ from .models import Category, SPU, SKU
 from django.contrib import messages
 from .sync import ProductSync
 from django.db.models import Q, Count
+from django.http import HttpResponseRedirect
+from .forms import SKUForm
 
 # Create your views here.
 
@@ -116,7 +118,7 @@ class SPUListView(LoginRequiredMixin, ListView):
 
 class SPUCreateView(LoginRequiredMixin, CreateView):
     model = SPU
-    template_name = 'gallery/spu_form.html'
+    template_name = 'gallery/spu_form2.html'
     fields = ['spu_code', 'spu_name', 'product_type', 'spu_remark', 
              'sales_channel', 'category', 'status']
     success_url = reverse_lazy('gallery:spu_list')
@@ -132,6 +134,7 @@ class SPUCreateView(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         messages.success(self.request, 'SPU创建成功！')
         return super().form_valid(form)
+
 
 class SPUUpdateView(LoginRequiredMixin, UpdateView):
     model = SPU
@@ -274,43 +277,95 @@ class SKUListView(LoginRequiredMixin, ListView):
 
 class SKUCreateView(LoginRequiredMixin, CreateView):
     model = SKU
-    template_name = 'gallery/sku_form.html'
-    fields = ['sku_code', 'sku_name', 'provider_code', 'plating_process', 
-             'color', 'material', 'length', 'width', 'height', 'weight', 
-             'status', 'spu', 'img_url']
+    template_name = 'gallery/sku_form2.html'
+    form_class = SKUForm
     success_url = reverse_lazy('gallery:sku_list')
     login_url = '/muggle/login/'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = '新增SKU'
-        context['active_menu'] = 'gallery'  # 修改为 gallery
-        context['active_submenu'] = 'sku'  # 添加 active_submenu
+        context['active_menu'] = 'gallery'
+        context['active_submenu'] = 'sku'
+        context['spus'] = SPU.objects.filter(status=True).order_by('-created_at')
         return context
 
     def form_valid(self, form):
-        messages.success(self.request, 'SKU创建成功！')
-        return super().form_valid(form)
+        try:
+            # 处理空值，设置默认值为0
+            if not form.cleaned_data.get('length'):
+                form.instance.length = 0
+            if not form.cleaned_data.get('width'):
+                form.instance.width = 0
+            if not form.cleaned_data.get('height'):
+                form.instance.height = 0
+            if not form.cleaned_data.get('weight'):
+                form.instance.weight = 0
+            
+            # 处理其他尺寸字段
+            other_dimensions = form.cleaned_data.get('other_dimensions')
+            if other_dimensions:
+                form.instance.other_dimensions = other_dimensions[:25]  # 确保不超过25个字符
+                
+            response = super().form_valid(form)
+            messages.success(self.request, 'SKU创建成功！')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'SKU创建失败：{str(e)}')
+            return self.form_invalid(form)
+
+    def form_invalid(self, form):
+        for field, errors in form.errors.items():
+            field_name = form.fields[field].label or field
+            for error in errors:
+                messages.error(self.request, f'{field_name}: {error}')
+        return super().form_invalid(form)
 
 class SKUUpdateView(LoginRequiredMixin, UpdateView):
     model = SKU
     template_name = 'gallery/sku_form.html'
-    fields = ['sku_code', 'sku_name', 'provider_code', 'plating_process', 
-             'color', 'material', 'length', 'width', 'height', 'weight', 
-             'status', 'spu', 'img_url']
+    form_class = SKUForm
     success_url = reverse_lazy('gallery:sku_list')
     login_url = '/muggle/login/'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = '编辑SKU'
-        context['active_menu'] = 'gallery'  # 修改为 gallery
-        context['active_submenu'] = 'sku'  # 添加 active_submenu
+        context['active_menu'] = 'gallery'
+        context['active_submenu'] = 'sku'
+        context['spus'] = SPU.objects.filter(status=True).order_by('-created_at')
         return context
 
     def form_valid(self, form):
-        messages.success(self.request, 'SKU更新成功！')
-        return super().form_valid(form)
+        try:
+            # 处理空值，设置默认值为0
+            if not form.cleaned_data.get('length'):
+                form.instance.length = 0
+            if not form.cleaned_data.get('width'):
+                form.instance.width = 0
+            if not form.cleaned_data.get('height'):
+                form.instance.height = 0
+            if not form.cleaned_data.get('weight'):
+                form.instance.weight = 0
+            
+            # 处理其他尺寸字段
+            other_dimensions = form.cleaned_data.get('other_dimensions')
+            if other_dimensions:
+                form.instance.other_dimensions = other_dimensions[:25]  # 确保不超过25个字符
+                
+            response = super().form_valid(form)
+            messages.success(self.request, 'SKU更新成功！')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'SKU更新失败：{str(e)}')
+            return self.form_invalid(form)
+
+    def form_invalid(self, form):
+        for field, errors in form.errors.items():
+            field_name = form.fields[field].label or field
+            for error in errors:
+                messages.error(self.request, f'{field_name}: {error}')
+        return super().form_invalid(form)
 
 class SKUDeleteView(LoginRequiredMixin, DeleteView):
     model = SKU
@@ -321,8 +376,8 @@ class SKUDeleteView(LoginRequiredMixin, DeleteView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = '删除SKU'
-        context['active_menu'] = 'gallery'  # 修改为 gallery
-        context['active_submenu'] = 'sku'  # 添加 active_submenu
+        context['active_menu'] = 'gallery'
+        context['active_submenu'] = 'sku'
         return context
 
     def delete(self, request, *args, **kwargs):

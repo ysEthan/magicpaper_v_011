@@ -150,6 +150,14 @@ class SPU(models.Model):
         related_name='spus',
         verbose_name='所属类目'
     )
+    poc = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='managed_spus',
+        verbose_name='货品专员'
+    )
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='更新时间')
     status = models.BooleanField(default=True, verbose_name='状态')
@@ -205,10 +213,10 @@ class SKU(models.Model):
     id = models.AutoField(primary_key=True, verbose_name='SKU ID')
     sku_code = models.CharField(max_length=32, unique=True, verbose_name='SKU编码')
     sku_name = models.CharField(max_length=128, verbose_name='SKU名称')
-    provider_code = models.CharField(
-        max_length=32, 
-        default='unknown',
-        verbose_name='供应商编码'
+    suppliers_list = models.JSONField(
+        default=list,
+        verbose_name='供应商列表',
+        help_text='包含供应商信息：供应商代码、供应商货品编码、协商采购价、上次采购价、最低采购价、是否默认供应商'
     )
     plating_process = models.CharField(max_length=32, choices=PLATING_PROCESS_CHOICES, verbose_name='电镀工艺')
     color = models.CharField(max_length=32, verbose_name='颜色')
@@ -226,6 +234,7 @@ class SKU(models.Model):
         verbose_name='高度(mm)'
     )
     weight = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='重量(g)')
+    other_dimensions = models.CharField(max_length=25, blank=True, null=True, verbose_name='其他尺寸')
     status = models.BooleanField(default=True, verbose_name='状态')
     spu = models.ForeignKey(SPU, on_delete=models.CASCADE, related_name='skus', verbose_name='所属SPU')
     img_url = models.CharField(
@@ -261,8 +270,6 @@ class SKU(models.Model):
             })
 
     def save(self, *args, **kwargs):
-        if not self.provider_code:
-            self.provider_code = 'unknown'
         if not self.plating_process:
             self.plating_process = 'none'
         super().save(*args, **kwargs)

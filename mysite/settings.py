@@ -57,6 +57,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# Message framework settings
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
 ROOT_URLCONF = 'mysite.urls'
 LOGIN_URL = 'muggle:login'
 LOGIN_REDIRECT_URL = '/'
