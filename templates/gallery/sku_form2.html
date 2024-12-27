@@ -246,27 +246,25 @@
 
 
 
-
                                             <div class="col-md-2">
-                                                <div class="mb-3">
-                                                    <select class="form-select {% if form.category.errors %}is-invalid{% endif %}" name="category" required>
-                                                        <option value="">选择类目</option>
-                                                        {% for category in categories %}
-                                                            <option value="{{ category.id }}" {% if form.category.value|stringformat:"s" == category.id|stringformat:"s" %}selected{% endif %}>
-                                                                {{ category.category_name_zh }} {% if category.category_name_en %}({{ category.category_name_en }}){% endif %}
-                                                            </option>
-                                                        {% endfor %}
-                                                    </select>
-                                                    {% if form.category.errors %}
-                                                        <div class="invalid-feedback">{{ form.category.errors.0 }}</div>
-                                                    {% endif %}
-                                                </div>
+
+                                              <div class="mb-3">
+
+                                                <select type="text" class="form-select mb-3 is-valid" id="select-countries-valid" value="">
+                                                  <option value="pl">Poland</option>
+                                                  <option value="de">Germany</option>
+                                                  <option value="cz">Czech Republic</option>
+                                                  <option value="br">Brazil</option>
+                                                </select>
+
+                                              </div>
                                             </div>
 
+
                                             <div class="col-md-2">
 
                                                 <div class="mb-3">
-                                                    <select class="form-select {% if form.spu.errors %}is-invalid{% endif %}" name="spu" required>
+                                                    <select class="form-select {% if form.spu.errors %}is-invalid{% endif %}" name="spu" id="select-spu" required>
                                                         <option value="">选择SPU</option>
                                                         {% for spu in spus %}
                                                             <option value="{{ spu.id }}" {% if form.spu.value|stringformat:"s" == spu.id|stringformat:"s" %}selected{% endif %}>
@@ -319,4 +317,107 @@
             </div>
         </div>
     </div>
+
+
+
+
+    <script>
+    // @formatter:off
+    document.addEventListener("DOMContentLoaded", function () {
+    	var el;
+    	window.TomSelect && (new TomSelect(el = document.getElementById('select-countries-valid'), {
+    		copyClassesToDropdown: false,
+    		dropdownParent: 'body',
+    		controlInput: '<input>',
+    		render:{
+    			item: function(data,escape) {
+    				if( data.customProperties ){
+    					return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+    				}
+    				return '<div>' + escape(data.text) + '</div>';
+    			},
+    			option: function(data,escape){
+    				if( data.customProperties ){
+    					return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+    				}
+    				return '<div>' + escape(data.text) + '</div>';
+    			},
+    		},
+    	}));
+    });
+    // @formatter:on
+  </script>
+  <script>
+    // @formatter:off
+    document.addEventListener("DOMContentLoaded", function () {
+    	var el;
+    	window.TomSelect && (new TomSelect(el = document.getElementById('select-countries-invalid'), {
+    		copyClassesToDropdown: false,
+    		dropdownParent: 'body',
+    		controlInput: '<input>',
+    		render:{
+    			item: function(data,escape) {
+    				if( data.customProperties ){
+    					return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+    				}
+    				return '<div>' + escape(data.text) + '</div>';
+    			},
+    			option: function(data,escape){
+    				if( data.customProperties ){
+    					return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+    				}
+    				return '<div>' + escape(data.text) + '</div>';
+    			},
+    		},
+    	}));
+    });
+    // @formatter:on
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    	let sliderTriggerList = [].slice.call(document.querySelectorAll("[data-slider]"));
+    	sliderTriggerList.map(function (sliderTriggerEl) {
+    		let options = {};
+    		if (sliderTriggerEl.getAttribute("data-slider")) {
+    			options = JSON.parse(sliderTriggerEl.getAttribute("data-slider"));
+    		}
+    		let slider = noUiSlider.create(sliderTriggerEl, options);
+    		if (options['js-name']) {
+    			window[options['js-name']] = slider;
+    		}
+    	});
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        window.TomSelect && (new TomSelect('#select-spu', {
+            copyClassesToDropdown: false,
+            dropdownParent: 'body',
+            controlInput: '<input>',
+            render:{
+                item: function(data,escape) {
+                    return '<div>' + escape(data.text) + '</div>';
+                },
+                option: function(data,escape){
+                    return '<div>' + escape(data.text) + '</div>';
+                },
+            },
+            plugins: ['dropdown_input']
+        }));
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endblock %}
