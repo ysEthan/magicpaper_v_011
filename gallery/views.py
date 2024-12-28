@@ -3,6 +3,7 @@ from django.views.generic import ListView, CreateView, UpdateView, DeleteView, V
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from .models import Category, SPU, SKU
+from django.contrib.auth.models import User
 from django.contrib import messages
 from .sync import ProductSync
 from django.db.models import Q, Count
@@ -287,10 +288,19 @@ class SKUCreateView(LoginRequiredMixin, CreateView):
         context['title'] = '新增SKU'
         context['active_menu'] = 'gallery'
         context['active_submenu'] = 'sku'
-        context['spus'] = SPU.objects.filter(status=True).order_by('-created_at')
+        
+        # 获取所有SPU并添加必要的字段
+        spus = SPU.objects.filter(status=True).order_by('-created_at')
+        for spu in spus:
+            # 确保所有字段都存在
+            spu.poc_id = spu.poc.id if spu.poc else ''
+        context['spus'] = spus
         
         # 获取所有可用的类目
         context['categories'] = Category.objects.filter(status=True).order_by('level', 'rank_id')
+        
+        # 获取所有专员
+        context['pocs'] = User.objects.filter(is_active=True).order_by('username')
         
         # 获取最新的SKU ID并生成新的SKU编码
         try:
@@ -304,42 +314,44 @@ class SKUCreateView(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         try:
-            # 设置SKU编码
-            try:
-                latest_sku = SKU.objects.latest('id')
-                next_id = latest_sku.id + 1
-            except SKU.DoesNotExist:
-                next_id = 1
-            
-            form.instance.sku_code = f'SKU{next_id:06d}'
-            
-            # 处理空值，设置默认值为0
-            if not form.cleaned_data.get('length'):
-                form.instance.length = 0
-            if not form.cleaned_data.get('width'):
-                form.instance.width = 0
-            if not form.cleaned_data.get('height'):
-                form.instance.height = 0
-            if not form.cleaned_data.get('weight'):
-                form.instance.weight = 0
-            
-            # 处理其他尺寸字段
-            other_dimensions = form.cleaned_data.get('other_dimensions')
-            if other_dimensions:
-                form.instance.other_dimensions = other_dimensions[:25]  # 确保不超过25个字符
+            # 检查是否是新建SPU
+            if self.request.POST.get('spu_selection') == 'create':
+                # 获取最新的SPU ID并生成新的SPU编码
+                try:
+                    latest_spu = SPU.objects.latest('id')
+                    next_spu_id = latest_spu.id + 1
+                except SPU.DoesNotExist:
+                    next_spu_id = 1
                 
-            response = super().form_valid(form)
+                spu_code = f'SPU{next_spu_id:06d}'
+                
+                # 创建新的SPU
+                spu = SPU.objects.create(
+                    spu_code=spu_code,
+                    spu_name=form.cleaned_data.get('sku_name'),  # 使用SKU名称作为SPU名称
+                    product_type=self.request.POST.get('product_type'),
+                    sales_channel=self.request.POST.get('sales_channel'),
+                    brand=self.request.POST.get('brand'),
+                    poc_id=self.request.POST.get('poc')
+                )
+                # 设置SKU的SPU
+                form.instance.spu = spu
+            else:
+                # 如果是引用现有SPU，确保已选择了SPU
+                if not form.cleaned_data.get('spu'):
+                    form.add_error('spu', '请选择一个SPU')
+                    return self.form_invalid(form)
+            
             messages.success(self.request, 'SKU创建成功！')
-            return response
+            return super().form_valid(form)
         except Exception as e:
             messages.error(self.request, f'SKU创建失败：{str(e)}')
             return self.form_invalid(form)
 
     def form_invalid(self, form):
         for field, errors in form.errors.items():
-            field_name = form.fields[field].label or field
             for error in errors:
-                messages.error(self.request, f'{field_name}: {error}')
+                messages.error(self.request, f'{error}')
         return super().form_invalid(form)
 
 class SKUUpdateView(LoginRequiredMixin, UpdateView):

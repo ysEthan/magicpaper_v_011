@@ -2,7 +2,7 @@
 {% block content %}
     {% load static %}
     <style>
-        @import url('rsms.me/inter/inter.css');
+        @import url('static/css/inter.css');
 
         :root {
             --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
@@ -221,57 +221,42 @@
                                             <div class="col-md-12">
 
                                                 <div class="mb-3">
-
                                                     <div class="form-selectgroup">
                                                         <label class="form-selectgroup-item">
-                                                            <input type="radio" name="icons" value="home"
+                                                            <input type="radio" name="spu_selection" value="create"
                                                                    class="form-selectgroup-input" checked>
-                                                            <span class="form-selectgroup-label">引用现有SPU</span>
-                                                        </label>
-                                                        <label class="form-selectgroup-item">
-                                                            <input type="radio" name="icons" value="user"
-                                                                   class="form-selectgroup-input">
                                                             <span class="form-selectgroup-label">直接新建SPU</span>
                                                         </label>
 
+                                                        <label class="form-selectgroup-item">
+                                                            <input type="radio" name="spu_selection" value="reference"
+                                                                   class="form-selectgroup-input">
+                                                            <span class="form-selectgroup-label">引用现有SPU</span>
+                                                        </label>
                                                     </div>
                                                 </div>
 
-
-                                            </div>
-                                        </div>
-
-
                                         <div class="row g-2">
-
-
-
                                             <div class="col-md-2">
-
-                                              <div class="mb-3">
-
-                                                <select type="text" class="form-select mb-3 is-valid" id="select-countries-valid" value="">
-                                                  <option value="pl">Poland</option>
-                                                  <option value="de">Germany</option>
-                                                  <option value="cz">Czech Republic</option>
-                                                  <option value="br">Brazil</option>
-                                                </select>
-
-                                              </div>
-                                            </div>
-
-
-                                            <div class="col-md-2">
-
                                                 <div class="mb-3">
-                                                    <select class="form-select {% if form.spu.errors %}is-invalid{% endif %}" name="spu" id="select-spu" required>
-                                                        <option value="">选择SPU</option>
+                                                    <!-- 新建SPU时的输入框 -->
+                                                    <input type="text" class="form-control" id="newSpuCode" placeholder="SPU编码" readonly>
+                                                    
+                                                    <!-- 引用现有SPU时的搜索框 -->
+                                                    <input class="form-control" list="datalistOptions" id="spuSearch" 
+                                                           placeholder="输入SPU搜索" style="display: none;" 
+                                                           {% if form.spu.errors %}class="is-invalid"{% endif %} />
+                                                    <input type="hidden" name="spu" id="spuHiddenInput">
+                                                    <datalist id="datalistOptions">
                                                         {% for spu in spus %}
-                                                            <option value="{{ spu.id }}" {% if form.spu.value|stringformat:"s" == spu.id|stringformat:"s" %}selected{% endif %}>
-                                                                {{ spu.spu_code }} - {{ spu.spu_name }}
-                                                            </option>
+                                                            <option value="{{ spu.spu_code }} - {{ spu.spu_name }}" 
+                                                                    data-id="{{ spu.id }}"
+                                                                    data-product-type="{{ spu.product_type }}"
+                                                                    data-sales-channel="{{ spu.sales_channel }}"
+                                                                    data-brand="{{ spu.brand }}"
+                                                                    data-poc="{{ spu.poc_id }}">
                                                         {% endfor %}
-                                                    </select>
+                                                    </datalist>
                                                     {% if form.spu.errors %}
                                                         <div class="invalid-feedback">{{ form.spu.errors.0 }}</div>
                                                     {% endif %}
@@ -280,29 +265,61 @@
                                         </div>
 
 
+                                        <!-- spu输入框 第二行  -->
+                                        <div class="row g-2">
+                                            <div class="col-md-2">
+                                                <div class="mb-3">
+                                                    <select class="form-select {% if form.product_type.errors %}is-invalid{% endif %}" name="product_type" id="productTypeSelect" required>
+                                                        <option value="">选择类型</option>
+                                                        <option value="math_design">设计款</option>
+                                                        <option value="ready_made">现货款</option>
+                                                        <option value="raw_material">材料</option>
+                                                        <option value="packing_material">包材</option>
+                                                    </select>
+                                                    {% if form.product_type.errors %}
+                                                        <div class="invalid-feedback">{{ form.product_type.errors.0 }}</div>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="mb-3">
+                                                    <select class="form-select" name="sales_channel" id="salesChannelSelect">
+                                                        <option value="">销售渠道</option>
+                                                        <option value="1">线上</option>
+                                                        <option value="2">线下</option>
+                                                        <option value="3">全渠道</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="mb-3">
+                                                    <input type="text" class="form-control" name="brand" id="brandInput" placeholder="品牌">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="mb-3">
+                                                    <select class="form-select" name="poc" id="pocSelect">
+                                                        <option value="">选择专员</option>
+                                                        {% for poc in pocs %}
+                                                            <option value="{{ poc.id }}">{{ poc.username }}</option>
+                                                        {% endfor %}
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
 
 
 
                                     </div>
                                 </div>
 
-                                <!-- card-body row_3 start  -->
-                                <div class="row">
-                                    <div class="col-md-12 col-xl-12">
-                                        <!-- spu info  -->
-                                        <div class="mb-3">
-                                            <label class="form-label">供应商信息</label>
-                                        </div>
 
-                                        <div class="mb-3">
-                                            <textarea class="form-control {% if form.suppliers_list.errors %}is-invalid{% endif %}" name="suppliers_list" rows="3"
-                                                    placeholder="供应商信息 (JSON格式)">{{ form.suppliers_list.value|default:'' }}</textarea>
-                                            {% if form.suppliers_list.errors %}
-                                                <div class="invalid-feedback">{{ form.suppliers_list.errors.0 }}</div>
-                                            {% endif %}
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -317,8 +334,113 @@
             </div>
         </div>
     </div>
+</div>
 
-
-
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const spuSelectionRadios = document.querySelectorAll('input[name="spu_selection"]');
+    const newSpuCode = document.getElementById('newSpuCode');
+    const spuSearch = document.getElementById('spuSearch');
+    const datalist = document.getElementById('datalistOptions');
+    const productTypeSelect = document.getElementById('productTypeSelect');
+    const salesChannelSelect = document.getElementById('salesChannelSelect');
+    const brandInput = document.getElementById('brandInput');
+    const pocSelect = document.getElementById('pocSelect');
+    const spuHiddenInput = document.getElementById('spuHiddenInput');
+    
+    // 获取最新的SPU ID并生成新的SPU编码
+    let nextSpuId = 1;
+    if (datalist.options.length > 0) {
+        const allIds = Array.from(datalist.options).map(option => 
+            parseInt(option.dataset.id)
+        );
+        nextSpuId = Math.max(...allIds) + 1;
+    }
+    const generatedSpuCode = `SPU${String(nextSpuId).padStart(6, '0')}`;
+    newSpuCode.value = generatedSpuCode;
+    
+    // 存储所有SPU选项的数据
+    const spuOptions = [];
+    for (const option of datalist.options) {
+        spuOptions.push({
+            value: option.value,
+            id: option.dataset.id,
+            productType: option.dataset.productType,
+            salesChannel: option.dataset.salesChannel,
+            brand: option.dataset.brand,
+            poc: option.dataset.poc
+        });
+    }
+    
+    // 处理SPU选择
+    function handleSPUSelection(value) {
+        console.log('Handling SPU selection for value:', value);
+        
+        // 查找匹配的SPU选项
+        const selectedSPU = spuOptions.find(spu => spu.value === value);
+        console.log('Selected SPU:', selectedSPU);
+        
+        if (selectedSPU) {
+            // 更新所有字段
+            spuHiddenInput.value = selectedSPU.id;
+            productTypeSelect.value = selectedSPU.productType || '';
+            salesChannelSelect.value = selectedSPU.salesChannel || '';
+            brandInput.value = selectedSPU.brand || '';
+            pocSelect.value = selectedSPU.poc || '';
+        } else {
+            // 清空所有字段
+            spuHiddenInput.value = '';
+            productTypeSelect.value = '';
+            salesChannelSelect.value = '';
+            brandInput.value = '';
+            pocSelect.value = '';
+        }
+    }
+    
+    // 监听单选按钮变化
+    spuSelectionRadios.forEach(radio => {
+        radio.addEventListener('change', function() {
+            if (this.value === 'create') {
+                // 显示新建SPU输入框，隐藏搜索框
+                newSpuCode.style.display = 'block';
+                spuSearch.style.display = 'none';
+                // 清空所有字段
+                spuHiddenInput.value = '';
+                productTypeSelect.value = '';
+                salesChannelSelect.value = '';
+                brandInput.value = '';
+                pocSelect.value = '';
+                // 设置新的SPU编码到显示框
+                newSpuCode.value = generatedSpuCode;
+            } else {
+                // 显示搜索框，隐藏新建SPU输入框
+                newSpuCode.style.display = 'none';
+                spuSearch.style.display = 'block';
+                // 清空搜索框和隐藏输入框
+                spuSearch.value = '';
+                spuHiddenInput.value = '';
+            }
+        });
+    });
+    
+    // 初始化时触发一次选中状态的处理
+    const selectedRadio = document.querySelector('input[name="spu_selection"]:checked');
+    if (selectedRadio && selectedRadio.value === 'create') {
+        newSpuCode.style.display = 'block';
+        spuSearch.style.display = 'none';
+    }
+    
+    // 监听搜索框事件
+    spuSearch.addEventListener('input', function(e) {
+        handleSPUSelection(e.target.value);
+    });
+    
+    spuSearch.addEventListener('change', function(e) {
+        handleSPUSelection(e.target.value);
+    });
+});
+</script>
 
 {% endblock %}
+
+
